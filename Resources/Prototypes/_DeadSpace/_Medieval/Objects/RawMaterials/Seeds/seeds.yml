@@ -1,0 +1,89 @@
+- type: entity
+  parent: SeedBase
+  name: семена яблока
+  id: MedievalAppleSeeds
+  components:
+    - type: Seed
+      seedId: MedievalApple
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/apple.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена капусты
+  id: MedievalCabbageSeeds
+  components:
+    - type: Seed
+      seedId: MedievalCabbage
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/berries.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена ягод
+  id: MedievalBerriesSeeds
+  components:
+    - type: Seed
+      seedId: MedievalBerries
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/cabbage.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена моркови
+  id: MedievalCarrotSeeds
+  components:
+    - type: Seed
+      seedId: MedievalCarrot
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/carrot.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена вишни
+  id: MedievalCherrySeeds
+  components:
+    - type: Seed
+      seedId: MedievalCherry
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/cherry.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена льна
+  id: MedievalFlaxSeeds
+  components:
+    - type: Seed
+      seedId: MedievalFlax
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/flax.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена картошки
+  id: MedievalPotatoSeeds
+  components:
+    - type: Seed
+      seedId: MedievalPotato
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/potato.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена помидора
+  id: MedievalTomatoSeeds
+  components:
+    - type: Seed
+      seedId: MedievalTomato
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/tomato.rsi
+
+- type: entity
+  parent: SeedBase
+  name: семена пшеницы
+  id: MedievalWheatSeeds
+  components:
+    - type: Seed
+      seedId: MedievalWheat
+    - type: Sprite
+      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/wheat.rsi
