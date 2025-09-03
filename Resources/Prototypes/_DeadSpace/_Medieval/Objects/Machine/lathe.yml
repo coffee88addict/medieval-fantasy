@@ -74,7 +74,7 @@
       - state: inserting
         map: ["enum.MaterialStorageVisualLayers.Inserting"]
   - type: Machine
-    board: MedievalCarpenterTableDetail
+    board: MedievalSmelterDetail
   - type: MaterialStorage
     ignoreColor: true
     whitelist:
