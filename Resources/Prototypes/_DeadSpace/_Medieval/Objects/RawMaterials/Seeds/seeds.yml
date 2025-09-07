@@ -31,8 +31,8 @@
   id: MedievalBerriesSeeds
   components:
   - type: StaticPrice
-      price: 0
-    - type: Seed
+    price: 0
+  - type: Seed
     seedId: MedievalBerries
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/cabbage.rsi
