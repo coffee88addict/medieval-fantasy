@@ -4,6 +4,8 @@
   name: семена яблока
   id: MedievalAppleSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalApple
     - type: Sprite
@@ -15,6 +17,8 @@
   name: семена капусты
   id: MedievalCabbageSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalCabbage
     - type: Sprite
@@ -26,10 +30,12 @@
   name: семена ягод
   id: MedievalBerriesSeeds
   components:
+  - type: StaticPrice
+      price: 0
     - type: Seed
-      seedId: MedievalBerries
-    - type: Sprite
-      sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/cabbage.rsi
+    seedId: MedievalBerries
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Materials/Seeds/cabbage.rsi
 
 - type: entity
   suffix: Средневековье
@@ -37,6 +43,8 @@
   name: семена моркови
   id: MedievalCarrotSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalCarrot
     - type: Sprite
@@ -48,6 +56,8 @@
   name: семена вишни
   id: MedievalCherrySeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalCherry
     - type: Sprite
@@ -59,6 +69,8 @@
   name: семена льна
   id: MedievalFlaxSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalFlax
     - type: Sprite
@@ -70,6 +82,8 @@
   name: семена картошки
   id: MedievalPotatoSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalPotato
     - type: Sprite
@@ -81,6 +95,8 @@
   name: семена помидора
   id: MedievalTomatoSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalTomato
     - type: Sprite
@@ -92,6 +108,8 @@
   name: семена пшеницы
   id: MedievalWheatSeeds
   components:
+    - type: StaticPrice
+      price: 0
     - type: Seed
       seedId: MedievalWheat
     - type: Sprite

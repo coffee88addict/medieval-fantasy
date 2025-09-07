@@ -7,6 +7,8 @@
   id: FoodMedievalApple
   description: Сочное и сладкое яблоко, символ изобилия.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - apple
@@ -51,6 +53,8 @@
   id: FoodMedievalCabbage
   description: Круглый кочан капусты, полезный и хрустящий.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - cabbage
@@ -93,6 +97,8 @@
   id: FoodMedievalBerries
   description: Горсть лесных ягод, сладких и ароматных.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - berry
@@ -137,6 +143,8 @@
   id: FoodMedievalCarrot
   description: Ярко-оранжевая морковь, полезна для глаз.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - carrot
@@ -181,6 +189,8 @@
   id: FoodMedievalCherry
   description: Кисло-сладкая вишня, любимое лакомство летом.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - cherry
@@ -225,6 +235,8 @@
   id: FoodMedievalFlax
   description: Стебель льна, из которого можно сделать нить.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - cotton
@@ -267,6 +279,8 @@
   id: FoodMedievalPotato
   description: Сытный клубень картофеля, основа крестьянского стола.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - potato
@@ -309,6 +323,8 @@
   id: FoodMedievalTomato
   description: Сочный красный помидор, хорош как свежим, так и в рагу.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - tomato
@@ -353,6 +369,8 @@
   id: FoodMedievalWheat
   description: Золотистые колосья пшеницы, источник муки и хлеба.
   components:
+  - type: StaticPrice
+    price: 10
   - type: FlavorProfile
     flavors:
       - wheat
