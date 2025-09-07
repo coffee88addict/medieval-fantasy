@@ -2,7 +2,6 @@
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Audio;
 
 namespace Content.Shared.DeadSpace.Abilities.StunRadius.Components;
@@ -20,8 +19,9 @@ public sealed partial class StunRadiusComponent : Component
     [DataField]
     public string EffectPrototype = string.Empty;
 
-    [DataField("actionStunRadius", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string ActionStunRadius = "ActionStunRadius";
+    [DataField]
+    public EntProtoId ActionStunRadius = "ActionStunRadius";
+
 
     [DataField]
     public EntityUid? ActionStunRadiusEntity;
@@ -31,9 +31,6 @@ public sealed partial class StunRadiusComponent : Component
     [Access(Other = AccessPermissions.ReadWrite)]
     public float ParalyzeTime = 3f;
 
-    [ViewVariables(VVAccess.ReadWrite)]
-    [DataField, AutoNetworkedField]
-    [Access(Other = AccessPermissions.ReadWrite)]
     public float RangeStun = 5f;
 
     [DataField]
@@ -41,7 +38,6 @@ public sealed partial class StunRadiusComponent : Component
 
     [DataField]
     public bool IgnorAlien = true;
-
     public bool IsRunning = false;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
