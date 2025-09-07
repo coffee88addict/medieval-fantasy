@@ -2,7 +2,6 @@
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.DeadSpace.Languages.Components;
 
@@ -15,8 +14,8 @@ public sealed partial class LanguageComponent : Component
     [DataField]
     public string SelectedLanguage = String.Empty;
 
-    [DataField("selectLanguageAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
-    public string? SelectLanguageAction = "SelectLanguageAction";
+    [DataField]
+    public EntProtoId SelectLanguageAction = "SelectLanguageAction";
 
     [DataField]
     public EntityUid? SelectLanguageActionEntity;
