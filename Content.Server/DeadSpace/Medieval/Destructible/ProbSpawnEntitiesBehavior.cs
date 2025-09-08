@@ -5,6 +5,8 @@ using System.Numerics;
 using Content.Server.Destructible;
 using Content.Server.Destructible.Thresholds.Behaviors;
 using Content.Server.Forensics;
+using Content.Shared.Prototypes;
+using Content.Shared.Stacks;
 using Content.Shared.Storage;
 using Robust.Server.GameObjects;
 using Robust.Shared.Random;
@@ -55,6 +57,9 @@ namespace Content.Server.DeadSpace.Medieval.Destructible
                 var spawned = SpawnInContainer
                     ? system.EntityManager.SpawnNextToOrDrop(entityId, owner)
                     : system.EntityManager.SpawnEntity(entityId, position.Offset(getRandomVector()));
+
+                if (EntityPrototypeHelpers.HasComponent<StackComponent>(entityId, system.PrototypeManager, system.ComponentFactory))
+                    system.StackSystem.SetCount(spawned, 1);
 
                 TransferForensics(spawned, system, owner);
                 amount++;
