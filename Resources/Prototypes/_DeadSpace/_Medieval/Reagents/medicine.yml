@@ -1,0 +1,46 @@
+- type: reagent
+  id: MedievalHealingPotion
+  name: reagent-name-medieval-healing-potion
+  group: Medicine
+  desc: reagent-desc-medieval-healing-potion
+  flavor: sweet
+  color: "#ff9999"
+  physicalDesc: reagent-physical-desc-syrupy
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          damage:
+            groups:
+              Brute: -2
+              Burn: -2
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+          damage:
+            groups:
+              Brute: 1.0
+
+- type: reagent
+  id: MedievalAntitoxin
+  name: reagent-name-medieval-antitoxin
+  group: Medicine
+  desc: reagent-desc-medieval-antitoxin
+  flavor: bitter
+  color: "#66ff66"
+  physicalDesc: reagent-physical-desc-opaque
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          damage:
+            groups:
+              Toxin: -2
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+          damage:
+            types:
+              Poison: 1.0

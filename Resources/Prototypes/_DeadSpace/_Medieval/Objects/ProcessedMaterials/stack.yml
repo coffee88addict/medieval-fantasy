@@ -9,42 +9,42 @@
   id: MedievalProcessedIron
   name: обработанное железо
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: iron }
-  spawn: MedievalStoneOre1
+  spawn: MedievalIronIngot1
   maxCount: 1
 
 - type: stack
   id: MedievalSteel
   name: сталь
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: steel }
-  spawn: MedievalCoalOre1
+  spawn: MedievalSteelIngot1
   maxCount: 1
 
 - type: stack
-  id: MedievalProcessedSilver
+  id: MedievalSilverIngot
   name: обработанное серебро
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: silver }
-  spawn: MedievalIronOre1
+  spawn: MedievalSilverIngot1
   maxCount: 1
 
 - type: stack
   id: MedievalProcessedGold
   name: обработанное золото
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: gold }
-  spawn: MedievalSilverOre1
+  spawn: MedievalGoldIngot1
   maxCount: 1
 
 - type: stack
   id: MedievalProcessedMithril
   name: обработанный мифрил
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: mithril }
-  spawn: MedievalGoldOre1
+  spawn: MedievalMithrilIngot1
   maxCount: 1
 
 - type: stack
   id: MedievalProcessedAdamantine
   name: обработанный адамантит
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: adamantine }
-  spawn: MedievalMithrilOre1
+  spawn: MedievalAdamantineIngot1
   maxCount: 1
 
 - type: stack
