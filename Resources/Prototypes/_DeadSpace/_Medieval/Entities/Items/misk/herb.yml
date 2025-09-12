@@ -6,6 +6,7 @@
   components:
   - type: SolutionContainerManager
   - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Flora/herbs.rsi
   - type: Extractable
 
 - type: entity
