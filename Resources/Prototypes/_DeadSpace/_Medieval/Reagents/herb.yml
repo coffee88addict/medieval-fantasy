@@ -1,9 +1,34 @@
 - type: reagent
+  id: MedievalGlaznica
+  name: reagent-name-medieval-glaznica
+  group: Food
+  desc: reagent-desc-medieval-glaznica
+  flavor: bitter
+  color: "#7e3d3d"
+  physicalDesc: reagent-physical-desc-strong-smelling
+  metabolisms:
+    Food:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.5
+        - !type:HealthChange
+          damage:
+            types:
+              Poison: -0.1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Poison: 1.0
+
+- type: reagent
   id: MedievalKamnelepestnik
   name: reagent-name-medieval-kamnelepestnik
   group: Food
   desc: reagent-desc-medieval-kamnelepestnik
-  flavor: metallic
+  flavor: mineral
   color: "#6c6c6c"
   physicalDesc: reagent-physical-desc-powdery
   metabolisms:
@@ -24,11 +49,85 @@
               Blunt: 1.0
 
 - type: reagent
+  id: MedievalKrovavayaRoza
+  name: reagent-name-medieval-krovavaya-roza
+  group: Food
+  desc: reagent-desc-medieval-krovavaya-roza
+  flavor: metallic
+  color: "#b81212"
+  physicalDesc: reagent-physical-desc-metallic
+  metabolisms:
+    Food:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.4
+        - !type:HealthChange
+          damage:
+            types:
+              Bloodloss: -0.1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Bloodloss: 1.0
+
+- type: reagent
+  id: MedievalLunocvet
+  name: reagent-name-medieval-lunocvet
+  group: Food
+  desc: reagent-desc-medieval-lunocvet
+  flavor: sweet
+  color: "#c6b4ff"
+  physicalDesc: reagent-physical-desc-glowing
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.5
+        - !type:HealthChange
+          damage:
+            groups:
+              Brute: -0.1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            groups:
+              Brute: 1.0
+
+- type: reagent
+  id: MedievalOgneCvet
+  name: reagent-name-medieval-ognecvet
+  group: Food
+  desc: reagent-desc-medieval-ognecvet
+  flavor: spicy
+  color: "#ff6600"
+  physicalDesc: reagent-physical-desc-pungent
+  metabolisms:
+    Food:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.4
+        - !type:AdjustReagent
+          reagent: CapsaicinOil
+          amount: 0.1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Heat: 1.0
+
+- type: reagent
   id: MedievalPihta
   name: reagent-name-medieval-pihta
   group: Food
   desc: reagent-desc-medieval-pihta
-  flavor: leafy
+  flavor: floral
   color: "#e2d14f"
   physicalDesc: reagent-physical-desc-aromatic
   metabolisms:
@@ -53,7 +152,7 @@
   name: reagent-name-medieval-romashka
   group: Food
   desc: reagent-desc-medieval-romashka
-  flavor: soothing
+  flavor: calming
   color: "#fff6c4"
   physicalDesc: reagent-physical-desc-soothing
   metabolisms:
@@ -86,7 +185,7 @@
   name: reagent-name-medieval-shipovec
   group: Food
   desc: reagent-desc-medieval-shipovec
-  flavor: sharp
+  flavor: thorny
   color: "#4d3f29"
   physicalDesc: reagent-physical-desc-strong-smelling
   metabolisms:
@@ -111,7 +210,7 @@
   name: reagent-name-medieval-suhocvet
   group: Food
   desc: reagent-desc-medieval-suhocvet
-  flavor: bitter
+  flavor: dry
   color: "#d6c19c"
   physicalDesc: reagent-physical-desc-powdery
   metabolisms:
@@ -128,11 +227,59 @@
               Poison: 1.0
 
 - type: reagent
+  id: MedievalTernovnik
+  name: reagent-name-medieval-ternovnik
+  group: Food
+  desc: reagent-desc-medieval-ternovnik
+  flavor: spooky
+  color: "#3b003b"
+  physicalDesc: reagent-physical-desc-enigmatic
+  metabolisms:
+    Food:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.2
+        - !type:Jitter
+          probability: 0.05
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Shock: 1.0
+
+- type: reagent
+  id: MedievalVeresk
+  name: reagent-name-medieval-veresk
+  group: Food
+  desc: reagent-desc-medieval-veresk
+  flavor: sweet
+  color: "#b95cff"
+  physicalDesc: reagent-physical-desc-aromatic
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:SatiateHunger
+          factor: 0.4
+        - !type:HealthChange
+          damage:
+            groups:
+              Toxin: -0.1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Poison: 1.0
+
+- type: reagent
   id: MedievalViunka
   name: reagent-name-medieval-viunka
   group: Food
   desc: reagent-desc-medieval-viunka
-  flavor: sour
+  flavor: tangy
   color: "#2fa36b"
   physicalDesc: reagent-physical-desc-tangy
   metabolisms:
@@ -151,3 +298,24 @@
           damage:
             types:
               Shock: 1.0
+
+- type: reagent
+  id: MedievalVorosnik
+  name: reagent-name-medieval-vorosnik
+  group: Food
+  desc: reagent-desc-medieval-vorosnik
+  flavor: sour
+  color: "#7a995f"
+  physicalDesc: reagent-physical-desc-acrid
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 1
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 20
+          damage:
+            types:
+              Poison: 1.0
