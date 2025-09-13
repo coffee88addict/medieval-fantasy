@@ -140,3 +140,28 @@
   # - type: ResearchClient
   # - type: TechnologyDatabase
 
+- type: entity
+  abstract: true
+  parent: MedievalMachine
+  id: MedievalBaseHeaterMachine
+  components:
+  - type: Transform
+    anchored: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.08,-0.35,0.15,0.25"
+        mask:
+        - TabletopMachineMask
+        layer:
+        - Impassable
+        - MidImpassable
+        - LowImpassable
+        hard: false
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container

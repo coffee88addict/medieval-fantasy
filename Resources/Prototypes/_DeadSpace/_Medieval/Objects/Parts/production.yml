@@ -57,3 +57,15 @@
       MatterBin: 1
       Manipulator: 3
       Glass: 1
+
+- type: entity
+  id: MedievalHotplateDetail
+  parent: MedievalBaseMachineDetail
+  name: деталь костровой жаровни
+  components:
+  - type: MachineBoard
+    prototype: MedievalHotplate
+    stackRequirements: # Пока так
+      MatterBin: 1
+      Manipulator: 3
+      Glass: 1
