@@ -18,14 +18,28 @@ public sealed partial class EggComponent : Component
     [DataField]
     public EntityUid? ActionHatchEntity;
 
+    [DataField]
+    [ViewVariables(VVAccess.ReadOnly)]
+    public bool IsHatched = false;
+
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan TimeUntilSpawn;
 
     [DataField]
     public float Duration = 60f;
 
-    [DataField("spawned", required: true)]
-    public List<EntitySpawnEntry> SpawnedEntities = new();
+    [DataField("spawned")]
+    public List<EntitySpawnEntry> SpawnedEntities = new()
+    {
+        new EntitySpawnEntry
+        {
+            PrototypeId = "MobSpiderTerrorGuardian",
+            SpawnProbability = 1.0f,
+            GroupId = null,
+            Amount = 3,
+            MaxAmount = 3
+        }
+    };
 
     [DataField]
     public float DurationPlayEggSound = 10f;
