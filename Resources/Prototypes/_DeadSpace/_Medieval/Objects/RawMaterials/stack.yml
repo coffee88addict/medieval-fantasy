@@ -1,62 +1,62 @@
 - type: stack
   id: MedievalRawWood
-  name: древесина
+  name: stack-medieval-raw-wood
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/log.rsi, state: log }
   spawn: MedievalLog1
   maxCount: 1
 
 - type: stack
   id: MedievalRawStone
-  name: камень
+  name: stack-medieval-raw-stone
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: stone }
   spawn: MedievalStoneOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawCoal
-  name: уголь
+  name: stack-medieval-raw-coal
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: coal }
   spawn: MedievalCoalOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawIron
-  name: железо
+  name: stack-medieval-raw-iron
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: iron }
   spawn: MedievalIronOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawSilver
-  name: серебро
+  name: stack-medieval-raw-silver
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: silver }
   spawn: MedievalSilverOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawGold
-  name: золото
+  name: stack-medieval-raw-gold
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: gold }
   spawn: MedievalGoldOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawMithril
-  name: мифрил
+  name: stack-medieval-raw-mithril
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: mithril }
   spawn: MedievalMithrilOre1
   maxCount: 1
 
 - type: stack
   id: MedievalRawAdamantine
-  name: адамантин
+  name: stack-medieval-raw-adamantine
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ore.rsi, state: adamantine }
   spawn: MedievalAdamantineOre1
   maxCount: 1
 
 - type: stack
   id: MedievalManaCrystal
-  name: кристалл маны
+  name: stack-medieval-mana-crystal
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/crystal.rsi, state: mana }
   spawn: MedievalManaCrystal1
   maxCount: 1

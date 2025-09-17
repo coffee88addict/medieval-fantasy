@@ -6,7 +6,6 @@
   - type: MachineBoard
     prototype: MedievalSawmill
     stackRequirements: # Пока так
-      MatterBin: 1
       Manipulator: 3
       Glass: 1
 
@@ -18,7 +17,6 @@
   - type: MachineBoard
     prototype: MedievalCarpenterTable
     stackRequirements: # Пока так
-      MatterBin: 1
       Manipulator: 3
       Glass: 1
 
@@ -30,8 +28,6 @@
   - type: MachineBoard
     prototype: MedievalSmelter
     stackRequirements: # Пока так
-      MatterBin: 1
-      Manipulator: 3
       Glass: 1
 
 - type: entity
@@ -42,8 +38,6 @@
   - type: MachineBoard
     prototype: MedievalAlchemTable
     stackRequirements: # Пока так
-      MatterBin: 1
-      Manipulator: 3
       Glass: 1
 
 - type: entity
@@ -54,8 +48,6 @@
   - type: MachineBoard
     prototype: MedievalReagentGrinder
     stackRequirements: # Пока так
-      MatterBin: 1
-      Manipulator: 3
       Glass: 1
 
 - type: entity
@@ -66,6 +58,4 @@
   - type: MachineBoard
     prototype: MedievalHotplate
     stackRequirements: # Пока так
-      MatterBin: 1
-      Manipulator: 3
       Glass: 1

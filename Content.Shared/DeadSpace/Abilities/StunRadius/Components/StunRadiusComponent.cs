@@ -31,6 +31,8 @@ public sealed partial class StunRadiusComponent : Component
     [Access(Other = AccessPermissions.ReadWrite)]
     public float ParalyzeTime = 3f;
 
+    [ViewVariables(VVAccess.ReadOnly)]
+    [DataField]
     public float RangeStun = 5f;
 
     [DataField]

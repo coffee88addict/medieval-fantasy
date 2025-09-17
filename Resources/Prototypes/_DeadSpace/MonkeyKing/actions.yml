@@ -21,9 +21,13 @@
   description: Даёт цели разум, цель присоединяется к восстанию.
   categories: [ HideSpawnMenu ]
   components:
-  - type: EntityTargetAction
+  - type: Action
     useDelay: 5
-    icon: _DeadSpace/Sith/actions/submission.png
+    icon:
+      sprite: _DeadSpace/Sith/actions/submission.png
+      state: icon
+  - type: TargetAction
+  - type: EntityTargetAction
     event: !type:GiveIntelligenceActionEvent
 
 - type: entity
@@ -32,10 +36,12 @@
   description: Призывает обезьяну со случайным оружием.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 20
     icon: _DeadSpace/MonkeyKing/icons/army.png
+  - type: InstantAction
     event: !type:ArmyEvent
+
 
 - type: entity
   id: ActionKingBuff
@@ -43,9 +49,10 @@
   description: Увеличивает характеристики ближайших обезьян.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 30
     icon: _DeadSpace/MonkeyKing/icons/flag.png
+  - type: InstantAction
     event: !type:KingBuffActionEvent
 
 - type: entity
@@ -54,9 +61,10 @@
   description: Нанести сокрушительный удар, ударная волна которого снесёт всё на своём пути.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 30
     icon: _DeadSpace/MonkeyKing/icons/attack.png
+  - type: InstantAction
     event: !type:StunRadiusActionEvent
 
 - type: entity
@@ -64,10 +72,13 @@
   name: "[color=yellow]Банан![/color]"
   description: Сбейте своих врагов с ног большим бананом!
   components:
-  - type: WorldTargetAction
+  - type: Action
+    # TODO: actual sprite and iconOn
     icon: { sprite : Objects/Specific/Hydroponics/banana.rsi, state: produce }
-    event: !type:ActionGunShootEvent
+    itemIconStyle: BigAction
     priority: 2
+  - type: TargetAction
     checkCanAccess: false
     range: 0
-    itemIconStyle: BigAction
+  - type: WorldTargetAction
+    event: !type:ActionGunShootEvent
