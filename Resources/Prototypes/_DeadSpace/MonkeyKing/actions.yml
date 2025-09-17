@@ -4,16 +4,18 @@
   description: Прыжок в выбранную точку.
   categories: [ HideSpawnMenu ]
   components:
-  - type: WorldTargetAction
+  - type: Action
     useDelay: 10
     icon:
       sprite: Interface/Actions/actions_mecha.rsi
       state: mech_savannah
     itemIconStyle: NoItem
     priority: -1
-    event: !type:JumpToPointActionEvent
-    checkCanAccess: false
+  - type: TargetAction
     range: 0
+    checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:SpawnPointActionEvent
 
 - type: entity
   id: ActionGiveIntelligence
@@ -23,9 +25,7 @@
   components:
   - type: Action
     useDelay: 5
-    icon:
-      sprite: _DeadSpace/Sith/actions/submission.png
-      state: icon
+    icon: _DeadSpace/Sith/actions/submission.png
   - type: TargetAction
   - type: EntityTargetAction
     event: !type:GiveIntelligenceActionEvent
