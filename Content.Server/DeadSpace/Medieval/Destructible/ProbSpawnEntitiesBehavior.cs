@@ -58,7 +58,7 @@ namespace Content.Server.DeadSpace.Medieval.Destructible
                     ? system.EntityManager.SpawnNextToOrDrop(entityId, owner)
                     : system.EntityManager.SpawnEntity(entityId, position.Offset(getRandomVector()));
 
-                if (EntityPrototypeHelpers.HasComponent<StackComponent>(entityId, system.PrototypeManager, system.ComponentFactory))
+                if (EntityPrototypeHelpers.HasComponent<StackComponent>(entityId, system.PrototypeManager, system.EntityManager.ComponentFactory))
                     system.StackSystem.SetCount(spawned, 1);
 
                 TransferForensics(spawned, system, owner);
