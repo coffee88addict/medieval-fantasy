@@ -94,7 +94,7 @@
       Unsexed: IPSIPC
   - type: Language
     selectedLanguage: GeneralLanguage
-    languagesId:
+    knownLanguages:
     - MachineLanguage
     - GeneralLanguage
   - type: Tag

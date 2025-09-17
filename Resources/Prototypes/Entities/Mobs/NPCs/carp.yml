@@ -82,7 +82,7 @@
         - CannotSuicide
     - type: Language # DS14-Languages
       selectedLanguage: CarpDragonLanguage
-      languagesId:
+      knownLanguages:
       - CarpDragonLanguage
     - type: Speech
       speechVerb: LargeMob

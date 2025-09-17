@@ -51,6 +51,8 @@ using Content.Shared.Body.Components;
 using Robust.Server.Player;
 using Content.Shared.Zombies;
 using Content.Shared.Sprite;
+using Content.Shared.DeadSpace.Languages.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.DeadSpace.Necromorphs.InfectionDead;
 
@@ -70,6 +72,7 @@ public sealed partial class NecromorfSystem
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
     [Dependency] private readonly SharedRotationVisualsSystem _sharedRotationVisuals = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
+    private static readonly ProtoId<LanguagePrototype> NecroLanguage = "NecromorfLanguage";
 
     public void Necrofication(EntityUid target, string prototypeId, InfectionDeadStrainData strainData, MobStateComponent? mobState = null)
     {
@@ -129,8 +132,8 @@ public sealed partial class NecromorfSystem
             RemComp<LanguageComponent>(target);
 
         var langComp = new LanguageComponent();
-        langComp.LanguagesId.Add("NecromorfLanguage");
-        langComp.SelectedLanguage = "NecromorfLanguage";
+        langComp.KnownLanguages.Add(NecroLanguage);
+        langComp.SelectedLanguage = NecroLanguage;
         AddComp(target, langComp);
 
         var combat = EnsureComp<CombatModeComponent>(target);

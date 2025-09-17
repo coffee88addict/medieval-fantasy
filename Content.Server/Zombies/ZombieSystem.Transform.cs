@@ -41,6 +41,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Shared.DeadSpace.Languages.Components;
 using Content.Shared.NPC.Prototypes;
+using Content.Shared.DeadSpace.Languages.Prototypes;
 
 namespace Content.Server.Zombies;
 
@@ -70,7 +71,7 @@ public sealed partial class ZombieSystem
     private static readonly ProtoId<TagPrototype> InvalidForGlobalSpawnSpellTag = "InvalidForGlobalSpawnSpell";
     private static readonly ProtoId<TagPrototype> CannotSuicideTag = "CannotSuicide";
     private static readonly ProtoId<NpcFactionPrototype> ZombieFaction = "Zombie";
-
+    private static readonly ProtoId<LanguagePrototype> ZombieLanguage = "ZombieLanguage";
     /// <summary>
     /// Handles an entity turning into a zombie when they die or go into crit
     /// </summary>
@@ -124,16 +125,16 @@ public sealed partial class ZombieSystem
             RemComp<LanguageComponent>(target);
 
         var langComp = new LanguageComponent();
-        langComp.LanguagesId.Add("ZombieLanguage");
-        langComp.SelectedLanguage = "ZombieLanguage";
+        langComp.KnownLanguages.Add(ZombieLanguage);
+        langComp.SelectedLanguage = ZombieLanguage;
         AddComp(target, langComp);
+
+        // //funny voice
+        // var accentType = "zombie";
+        // if (TryComp<ZombieAccentOverrideComponent>(target, out var accent))
+        //     accentType = accent.Accent;
+
         // DS14-Languages-End
-
-        //funny voice
-        var accentType = "zombie";
-        if (TryComp<ZombieAccentOverrideComponent>(target, out var accent))
-            accentType = accent.Accent;
-
 
         //This is needed for stupid entities that fuck up combat mode component
         //in an attempt to make an entity not attack. This is the easiest way to do it.

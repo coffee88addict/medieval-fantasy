@@ -217,7 +217,7 @@
   - type: EmotePanel # DS14-Emote-panel
   - type: Language # DS14-Languages
     selectedLanguage: GeneralLanguage
-    languagesId:
+    knownLanguages:
     - GeneralLanguage
   - type: DamageToClothing # DS14-Medieval
 
