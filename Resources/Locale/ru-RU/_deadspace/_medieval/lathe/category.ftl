@@ -1,4 +1,5 @@
 lathe-medieval-category-tools = Инструменты
-lathe-medieval-category-blacksmithing = Кузнечное дело
 lathe-medieval-category-tile = Пол
-lathe-medieval-category-wood-processing = Обработка древесины
+lathe-medieval-category-raw-processing = Обработка сырья
+lathe-medieval-category-material-processing = Обработка материалов
+lathe-medieval-category-details = Детали

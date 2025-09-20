@@ -4,7 +4,7 @@
   name: medieval-processed-materials-wood
   color: "#8B4513"
   icon: { sprite:  _DeadSpace/_Medieval/Objects/Materials/board.rsi, state: board }
-  price: 141
+  price: 1.41
 
 - type: material
   id: MedievalProcessedIron
@@ -13,7 +13,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: iron }
   color: "#8A8A8A"   # серебристо-серый, железо
-  price: 443
+  price: 4.43
 
 - type: material
   id: MedievalSteel
@@ -22,7 +22,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: steel }
   color: "#B0C4DE"   # серебристо-серый, железо
-  price: 1076
+  price: 10.76
 
 - type: material
   id: MedievalProcessedSilver
@@ -31,7 +31,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: silver }
   color: "#C0C0FF"   # светло-серебристо-голубой, серебро
-  price: 1787
+  price: 17.87
 
 - type: material
   id: MedievalProcessedGold
@@ -40,7 +40,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: gold }
   color: "#FFD700"   # золотой, золото
-  price: 3932
+  price: 39.32
 
 - type: material
   id: MedievalProcessedMithril
@@ -49,7 +49,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: mithril }
   color: "#9370DB"   # средний фиолетовый (medium purple)
-  price: 4302
+  price: 43.02
 
 - type: material
   id: MedievalProcessedAdamantine
@@ -58,7 +58,7 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: adamantine }
   color: "#4B0000"
-  price: 7547
+  price: 75.47
 
 - type: material
   id: MedievalProcessedStone
@@ -67,4 +67,4 @@
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/stone.rsi, state: stone }
   color: "#808080"   # серый, камень
-  price: 88
+  price: 0.88

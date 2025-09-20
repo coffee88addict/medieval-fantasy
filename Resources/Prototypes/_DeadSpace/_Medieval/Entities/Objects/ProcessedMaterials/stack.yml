@@ -3,14 +3,14 @@
   name: stack-medieval-board
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/board.rsi, state: board }
   spawn: MedievalBoard1
-  maxCount: 5
+  maxCount: 6
 
 - type: stack
   id: MedievalRodWood
   name: stack-medieval-rod-wood
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/parts.rsi, state: rods, color: "#8B4513" }
   spawn: MedievalPartRodWood1
-  maxCount: 5
+  maxCount: 6
 
 - type: stack
   id: MedievalProcessedIron
@@ -60,3 +60,10 @@
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/stone.rsi, state: stone }
   spawn: MedievalProcessedStone1
   maxCount: 5
+
+# - type: stack
+#   id: MedievalNail
+#   name: stack-medieval-nail
+#   icon: { sprite: /Textures//Textures/_DeadSpace/_Medieval/Objects/Materials/stone.rsi, state: nail }
+#   spawn: MedievalNail1
+#   maxCount: 10

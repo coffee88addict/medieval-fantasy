@@ -28,6 +28,7 @@ public enum WearTrigger
     Interact = 1 << 1,
     TileTool = 1 << 2,
     Learn = 1 << 3,
+    RCD = 1 << 4,
 
-    All = MeleeHit | Interact | TileTool | Learn
+    All = MeleeHit | Interact | TileTool | Learn | RCD
 }

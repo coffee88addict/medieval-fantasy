@@ -163,6 +163,16 @@
       - MedievalFloorWoodParquet
   - type: Stack
     stackType: MedievalFloorTileWood
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodParquet
+  id: MedievalFloorTileItemWoodParquet5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: напольная плитка из черного дерева
@@ -180,6 +190,16 @@
       - MedievalFloorWoodBlack
   - type: Stack
     stackType: MedievalFloorTileItemWoodBlack
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodBlack
+  id: MedievalFloorTileItemWoodBlack5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: напольная плитка из темного дерева
@@ -197,6 +217,16 @@
       - MedievalFloorWoodDark
   - type: Stack
     stackType: MedievalFloorTileItemWoodDark
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodDark
+  id: MedievalFloorTileItemWoodDark5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: напольная плитка из светлого дерева
@@ -214,6 +244,16 @@
       - MedievalFloorWoodLight
   - type: Stack
     stackType: MedievalFloorTileItemWoodLight
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLight
+  id: MedievalFloorTileItemWoodLight5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: напольная плитка из красного дерева
@@ -231,6 +271,16 @@
       - MedievalFloorWoodRed
   - type: Stack
     stackType: MedievalFloorTileItemWoodRed
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodRed
+  id: MedievalFloorTileItemWoodRed5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: большой пол из черного дерева
@@ -248,6 +298,16 @@
       - MedievalFloorWoodLargeBlack
   - type: Stack
     stackType: MedievalFloorTileItemWoodLargeBlack
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLargeBlack
+  id: MedievalFloorTileItemWoodLargeBlack5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: большой пол из темного дерева
@@ -265,6 +325,16 @@
       - MedievalFloorWoodLargeDark
   - type: Stack
     stackType: MedievalFloorTileItemWoodLargeDark
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLargeDark
+  id: MedievalFloorTileItemWoodLargeDark5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: большой пол из светлого дерева
@@ -282,6 +352,16 @@
       - MedievalFloorWoodLargeLight
   - type: Stack
     stackType: MedievalFloorTileItemWoodLargeLight
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLargeLight
+  id: MedievalFloorTileItemWoodLargeLight5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: большой пол из красного дерева
@@ -299,6 +379,16 @@
       - MedievalFloorWoodLargeRed
   - type: Stack
     stackType: MedievalFloorTileItemWoodLargeRed
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLargeRed
+  id: MedievalFloorTileItemWoodLargeRed5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: паркетный пол из черного дерева
@@ -316,6 +406,16 @@
       - MedievalFloorWoodParquetBlack
   - type: Stack
     stackType: MedievalFloorTileItemWoodParquetBlack
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodParquetBlack
+  id: MedievalFloorTileItemWoodParquetBlack5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: паркетный пол из темного дерева
@@ -333,6 +433,16 @@
       - MedievalFloorWoodParquetDark
   - type: Stack
     stackType: MedievalFloorTileItemWoodParquetDark
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodParquetDark
+  id: MedievalFloorTileItemWoodParquetDark5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: паркетный пол из светлого дерева
@@ -350,6 +460,16 @@
       - MedievalFloorWoodParquetLight
   - type: Stack
     stackType: MedievalFloorTileItemWoodParquetLight
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodParquetLight
+  id: MedievalFloorTileItemWoodParquetLight5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: паркетный пол из красного дерева
@@ -367,6 +487,16 @@
       - MedievalFloorWoodParquetRed
   - type: Stack
     stackType: MedievalFloorTileItemWoodParquetRed
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodParquetRed
+  id: MedievalFloorTileItemWoodParquetRed5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: шахматный деревянный пол
@@ -384,6 +514,16 @@
       - MedievalFloorWoodChess
   - type: Stack
     stackType: MedievalFloorTileItemWoodChess
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodChess
+  id: MedievalFloorTileItemWoodChess5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: шахматный пол из черного дерева
@@ -401,6 +541,16 @@
       - MedievalFloorWoodChessBlack
   - type: Stack
     stackType: MedievalFloorTileItemWoodChessBlack
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodChessBlack
+  id: MedievalFloorTileItemWoodChessBlack5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: шахматный пол из темного дерева
@@ -418,6 +568,16 @@
       - MedievalFloorWoodChessDark
   - type: Stack
     stackType: MedievalFloorTileItemWoodChessDark
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodChessDark
+  id: MedievalFloorTileItemWoodChessDark5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: шахматный пол из светлого дерева
@@ -435,6 +595,16 @@
       - MedievalFloorWoodChessLight
   - type: Stack
     stackType: MedievalFloorTileItemWoodChessLight
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodChessLight
+  id: MedievalFloorTileItemWoodChessLight5
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   name: шахматный пол из красного дерева
@@ -452,3 +622,13 @@
       - MedievalFloorWoodChessRed
   - type: Stack
     stackType: MedievalFloorTileItemWoodChessRed
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 20
+
+- type: entity
+  parent: MedievalFloorTileItemWoodChessRed
+  id: MedievalFloorTileItemWoodChessRed5
+  components:
+  - type: Stack
+    count: 5

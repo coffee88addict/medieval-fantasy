@@ -58,7 +58,6 @@
 - type: entity
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighStraight
-  suffix: Straight
   components:
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
@@ -84,7 +83,6 @@
 - type: entity
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighEnd
-  suffix: End
   components:
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
@@ -110,7 +108,6 @@
 - type: entity
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighCorner
-  suffix: Corner
   components:
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi

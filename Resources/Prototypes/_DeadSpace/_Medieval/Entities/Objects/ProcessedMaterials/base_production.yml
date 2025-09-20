@@ -11,8 +11,6 @@
   - type: Item
     sprite: _DeadSpace/_Medieval/Objects/Materials/board.rsi
     size: Normal
-  - type: StaticPrice
-    price: 0
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic

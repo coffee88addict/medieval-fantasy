@@ -17,6 +17,8 @@ stack-medieval-raw-gold = золото
 stack-medieval-raw-mithril = мифрил
 stack-medieval-raw-adamantine = адамантин
 
+stack-medieval-nail = гвоздь
+
 stack-medieval-mana-crystal = кристалл маны
 
 stack-medieval-grass-floor = трава

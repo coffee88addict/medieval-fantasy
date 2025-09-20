@@ -7,7 +7,7 @@
     prototype: MedievalSawmill
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 4
+      MedievalProcessedIron: 100
 
 - type: entity
   id: MedievalCarpenterTableDetail
@@ -18,7 +18,7 @@
     prototype: MedievalCarpenterTable
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 3
+      MedievalProcessedWood: 300
 
 - type: entity
   id: MedievalSmelterDetail
@@ -29,7 +29,7 @@
     prototype: MedievalSmelter
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedStone: 5
+      MedievalProcessedStone: 500
 
 - type: entity
   id: MedievalAlchemTableDetail
@@ -40,7 +40,7 @@
     prototype: MedievalAlchemTable
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 4
+      MedievalProcessedWood: 400
 
 - type: entity
   id: MedievalReagentGrinderDetail
@@ -51,7 +51,7 @@
     prototype: MedievalReagentGrinder
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 2
+      MedievalProcessedWood: 200
 
 - type: entity
   id: MedievalHotplateDetail
@@ -62,5 +62,15 @@
     prototype: MedievalHotplate
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 1
+      MedievalProcessedWood: 100
 
+- type: entity
+  id: MedievalAnvilDetail
+  parent: MedievalBaseMachineDetail
+  name: деталь наковальни
+  components:
+  - type: MachineBoard
+    prototype: MedievalAnvil
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedIron: 500

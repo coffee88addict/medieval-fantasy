@@ -3,6 +3,7 @@
 using Content.Server.DeadSpace.Medieval.Wear.Components;
 using Content.Shared.DeadSpace.Medieval.Skills.Events;
 using Content.Shared.Interaction;
+using Content.Shared.RCD.Systems;
 using Content.Shared.Tools.Components;
 using Content.Shared.Weapons.Melee.Events;
 
@@ -19,6 +20,7 @@ public sealed class AddWearAfterUseSystem : EntitySystem
         SubscribeLocalEvent<AddWearAfterUseComponent, AfterInteractUsingEvent>(OnAfterInteractUsing);
         SubscribeLocalEvent<AddWearAfterUseComponent, TileToolDoAfterEvent>(OnToolTileComplete);
         SubscribeLocalEvent<AddWearAfterUseComponent, LearnDoAfterEvent>(OnLearnDoAfter);
+        SubscribeLocalEvent<AddWearAfterUseComponent, RCDDoAfterEvent>(OnRCDDoAfter);
 
     }
 
@@ -52,6 +54,15 @@ public sealed class AddWearAfterUseSystem : EntitySystem
     private void OnLearnDoAfter(EntityUid uid, AddWearAfterUseComponent component, LearnDoAfterEvent args)
     {
         if ((component.Triggers & WearTrigger.Learn) == 0)
+            return;
+
+        if (TryComp<WearComponent>(uid, out var wearComp))
+            _wear.AddWear(uid, component.Damage, wearComp);
+    }
+
+    private void OnRCDDoAfter(EntityUid uid, AddWearAfterUseComponent component, RCDDoAfterEvent args)
+    {
+        if ((component.Triggers & WearTrigger.RCD) == 0)
             return;
 
         if (TryComp<WearComponent>(uid, out var wearComp))

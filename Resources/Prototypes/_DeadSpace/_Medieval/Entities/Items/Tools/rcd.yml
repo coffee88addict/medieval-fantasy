@@ -1,0 +1,84 @@
+- type: entity
+  name: стройматериалы
+  parent: BaseItem
+  suffix: Средневековье
+  id: MedievaConstructionToolsAmmo
+  description: Материалы для строительства сооружений.
+  components:
+  - type: RCDAmmo
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
+    state: ammo
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
+    heldPrefix: ammo
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 100
+      MedievalProcessedStone: 200
+      MedievalProcessedIron: 100
+
+- type: entity
+  id: MedievalConstructionTools
+  parent: BaseItem
+  name: строительные инструменты
+  suffix: Средневековье
+  description: Инструмент установки и демонтажа различных конструкций и приспособлений. Для работы требуется материал.
+  components:
+  - type: RCD
+    availablePrototypes:
+    - MedievalWallStone
+    - MedievalHeavyWallStone
+    - MedievalWallWood
+    - MedievalWoodenSupportWall
+    - MedievalFenceWoodHighStraight
+    - MedievalFenceWoodHighEnd
+    - MedievalFenceWoodHighCorner
+    - MedievalFenceWoodHighTJunction
+    - MedievalFenceWoodHighGate
+    - MedievalFenceWoodSmallStraight
+    - MedievalFenceWoodSmallEnd
+    - MedievalFenceWoodSmallCorner
+    - MedievalFenceWoodSmallTJunction
+    - MedievalFenceWoodSmallGate
+  - type: LimitedCharges
+    maxCharges: 30
+    lastCharges: -1
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
+    state: hammer1
+  - type: Item
+    size: Normal
+    heldPrefix: hammer1
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 7
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedIron: 100
+      MedievalProcessedWood: 100
+  - type: UserInterface
+    interfaces:
+      enum.RcdUiKey.Key:
+        type: RCDMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.RcdUiKey.Key
+  - type: Wear
+  - type: Damageable
+    damageContainer: MedievalInorganic
+    damageModifierSet: MedievalIron
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: AddWearAfterUse
+    triggers: [RCD, MeleeHit]
+    damage:
+      types:
+        Structural: 5

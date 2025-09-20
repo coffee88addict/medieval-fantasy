@@ -9,7 +9,7 @@
     ignoreEmpty: true
   - type: Clickable
   - type: Sprite
-    sprite: _DeadSpace/_Medieval/Objects/Items/Tool/bucket.rsi
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/bucket.rsi
     layers:
     - state: icon
     - map: ["enum.SolutionContainerLayers.Fill"]
@@ -61,7 +61,7 @@
       - Bucket
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 50
+      MedievalProcessedWood: 1
   - type: DnaSubstanceTrace
   - type: Damageable
     damageContainer: Inorganic

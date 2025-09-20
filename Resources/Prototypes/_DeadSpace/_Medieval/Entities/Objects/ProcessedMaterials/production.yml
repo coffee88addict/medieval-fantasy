@@ -19,16 +19,17 @@
       map: ["base"]
   - type: Item
     heldPrefix: board
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
+    - CarpenterTableMaterialStorage
   - type: Appearance
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 1
-  - type: Tag
-    tags:
-    - CarpenterTableMaterialStorage
-  # - type: FloorTile
-  #   outputs:
-  #   - Plating
+      MedievalProcessedWood: 100
+  - type: FloorTile
+    outputs:
+    - MedievalLattice
 
 - type: entity
   parent: MedievalBoard
@@ -61,7 +62,10 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedIron: 1
+      MedievalProcessedIron: 100
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: Item
     inhandVisuals:
       left:
@@ -90,7 +94,10 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalSteel: 1
+      MedievalSteel: 100
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: Item
     inhandVisuals:
       left:
@@ -119,7 +126,10 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedSilver: 1
+      MedievalProcessedSilver: 100
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: Item
     inhandVisuals:
       left:
@@ -148,7 +158,7 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedGold: 1
+      MedievalProcessedGold: 100
   - type: Item
     inhandVisuals:
       left:
@@ -177,7 +187,10 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedMithril: 1
+      MedievalProcessedMithril: 100
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: Item
     inhandVisuals:
       left:
@@ -206,7 +219,10 @@
       map: ["base"]
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedAdamantine: 1
+      MedievalProcessedAdamantine: 100
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: Item
     inhandVisuals:
       left:
@@ -251,9 +267,12 @@
       - state: stone-inhand-left
       right:
       - state: stone-inhand-right
+  - type: Tag
+    tags:
+    - MedievalAnvilMaterialStorage
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedStone: 1
+      MedievalProcessedStone: 100
 
 - type: entity
   id: MedievalProcessedStone1
@@ -263,12 +282,12 @@
     count: 1
 
 - type: entity
-  id: MedievalProcessedStone4
+  id: MedievalProcessedStone6
   parent: MedievalProcessedStone
-  suffix: Средневековье, 4
+  suffix: Средневековье, 6
   components:
   - type: Stack
-    count: 5
+    count: 6
 
 - type: entity
   parent: BaseItem
@@ -319,9 +338,6 @@
   parent: MedievalPartRodWood
   id: MedievalPartRodWood1
   components:
-  - type: Tag
-    tags:
-    - ConstructionMaterial
   - type: Sprite
     state: rods
   - type: Stack
@@ -329,10 +345,61 @@
 
 - type: entity
   parent: MedievalPartRodWood
-  id: MedievalPartRodWood6
+  id: MedievalPartRodWood3
+  suffix: Средневековье, 3
   components:
-  - type: Tag
-    tags:
-    - ConstructionMaterial
+  - type: Stack
+    count: 3
+
+- type: entity
+  parent: MedievalPartRodWood
+  id: MedievalPartRodWood6
+  suffix: Средневековье, 6
+  components:
   - type: Stack
     count: 6
+
+# - type: entity
+#   parent: MedievalBaseProcessedMaterial
+#   id: MedievalNail
+#   categories: [ HideSpawnMenu ]
+#   name: гвозди
+#   components:
+#   - type: Appearance
+#   - type: Stack
+#     stackType: MedievalNail
+#     baseLayer: base
+#     layerStates:
+#     - nail
+#     - nail_2
+#     - nail_3
+#     - nail_4
+#     - nail_5
+#   - type: Sprite
+#     sprite: _DeadSpace/_Medieval/Objects/Materials/nails.rsi
+#     state: nail
+#     layers:
+#     - state: stone
+#       map: ["base"]
+#   - type: Item
+#     heldPrefix: nail
+#     sprite: _DeadSpace/_Medieval/Objects/Materials/nails.rsi
+#     size: Normal
+#   - type: PhysicalComposition
+#     materialComposition:
+#       MedievalProcessedIron: 10
+
+# - type: entity
+#   id: MedievalNail1
+#   parent: MedievalNail
+#   components:
+#   - type: Stack
+#     count: 1
+
+# - type: entity
+#   id: MedievalNail10
+#   parent: MedievalNail
+#   suffix: Средневековье, 10
+#   components:
+#   - type: Stack
+#     count: 10

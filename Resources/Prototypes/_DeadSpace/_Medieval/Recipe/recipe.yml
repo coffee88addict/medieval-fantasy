@@ -1,9 +1,16 @@
 # Base
 - type: latheRecipe
   abstract: true
-  id: MedievalBaseSawmillRecipe
+  id: MedievalRawProcessingRecipe
   categories:
-  - MedievalWoodProcessingCategory
+  - MedievalRawProcessingCategory
+  completetime: 10
+
+- type: latheRecipe
+  abstract: true
+  id: MedievalMaterialProcessingRecipe
+  categories:
+  - MedievalMaterialProcessingCategory
   completetime: 10
 
 - type: latheRecipe
@@ -18,176 +25,245 @@
   id: MedievalBaseTileRecipe
   completetime: 10
   materials:
-    MedievalProcessedWood: 0.3
+    MedievalProcessedWood: 100
   categories:
   - MedievalTileCategory
 
 - type: latheRecipe
   abstract: true
-  id: MedievalBaseSmelter
+  id: MedievalBaseDetailsRecipe
   completetime: 10
   categories:
-  - MedievalBlacksmithingCategory
+  - MedievalDetailsCategory
 
-## Total Sawmill
+## Пилорама
+
 - type: latheRecipe
-  parent: MedievalBaseSawmillRecipe
-  id: MedievalBoard
+  parent: MedievalRawProcessingRecipe
+  id: MedievalBoardRecipe
   result: MedievalBoard1
   completetime: 10
   materials:
-    MedievalRawWood: 1
+    MedievalRawWood: 100
 
-## Total Carpenter Table
+- type: latheRecipe
+  parent: MedievalRawProcessingRecipe
+  id: MedievalPartRodWoodRecipe
+  result: MedievalPartRodWood3
+  completetime: 30
+  materials:
+    MedievalRawWood: 100
+
+## Стол плотника
+
 - type: latheRecipe
   parent: MedievalBaseToolsRecipe
-  id: MedievalBucket
-  result: MedievalBucket
-  completetime: 10
+  id: MedievalBucketRecipe
+  result: MedievalBucketRecipe
   materials:
-    MedievalProcessedWood: 1
+    MedievalProcessedWood: 100
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalCarpenterTableDetailRecipe
+  result: MedievalCarpenterTableDetail
+  materials:
+    MedievalProcessedWood: 300
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalAlchemTableDetailRecipe
+  result: MedievalAlchemTableDetail
+  materials:
+    MedievalProcessedWood: 400
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalReagentGrinderDetailRecipe
+  result: MedievalReagentGrinderDetail
+  materials:
+    MedievalProcessedWood: 200
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalHotplateDetailRecipe
+  result: MedievalHotplateDetail
+  materials:
+    MedievalProcessedWood: 100
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodParquet
-  result: MedievalFloorTileItemWoodParquet
+  id: MedievalFloorTileItemWoodParquetRecipe
+  result: MedievalFloorTileItemWoodParquet5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodBlack
-  result: MedievalFloorTileItemWoodBlack
+  id: MedievalFloorTileItemWoodBlackRecipe
+  result: MedievalFloorTileItemWoodBlack5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodDark
-  result: MedievalFloorTileItemWoodDark
+  id: MedievalFloorTileItemWoodDarkRecipe
+  result: MedievalFloorTileItemWoodDark5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodLight
-  result: MedievalFloorTileItemWoodLight
+  id: MedievalFloorTileItemWoodLightRecipe
+  result: MedievalFloorTileItemWoodLight5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodRed
-  result: MedievalFloorTileItemWoodRed
+  id: MedievalFloorTileItemWoodRedRecipe
+  result: MedievalFloorTileItemWoodRed5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodLargeBlack
-  result: MedievalFloorTileItemWoodLargeBlack
+  id: MedievalFloorTileItemWoodLargeBlackRecipe
+  result: MedievalFloorTileItemWoodLargeBlack5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodLargeDark
-  result: MedievalFloorTileItemWoodLargeDark
+  id: MedievalFloorTileItemWoodLargeDarkRecipe
+  result: MedievalFloorTileItemWoodLargeDark5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodLargeLight
-  result: MedievalFloorTileItemWoodLargeLight
+  id: MedievalFloorTileItemWoodLargeLightRecipe
+  result: MedievalFloorTileItemWoodLargeLight5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodLargeRed
-  result: MedievalFloorTileItemWoodLargeRed
+  id: MedievalFloorTileItemWoodLargeRedRecipe
+  result: MedievalFloorTileItemWoodLargeRed5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodParquetBlack
-  result: MedievalFloorTileItemWoodParquetBlack
+  id: MedievalFloorTileItemWoodParquetBlackRecipe
+  result: MedievalFloorTileItemWoodParquetBlack5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodParquetDark
-  result: MedievalFloorTileItemWoodParquetDark
+  id: MedievalFloorTileItemWoodParquetDarkRecipe
+  result: MedievalFloorTileItemWoodParquetDark5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodParquetLight
-  result: MedievalFloorTileItemWoodParquetLight
+  id: MedievalFloorTileItemWoodParquetLightRecipe
+  result: MedievalFloorTileItemWoodParquetLight5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodParquetRed
-  result: MedievalFloorTileItemWoodParquetRed
+  id: MedievalFloorTileItemWoodParquetRedRecipe
+  result: MedievalFloorTileItemWoodParquetRed5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChess
-  result: MedievalFloorTileItemWoodChess
+  id: MedievalFloorTileItemWoodChessRecipe
+  result: MedievalFloorTileItemWoodChess5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChessBlack
-  result: MedievalFloorTileItemWoodChessBlack
+  id: MedievalFloorTileItemWoodChessBlackRecipe
+  result: MedievalFloorTileItemWoodChessBlack5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChessDark
-  result: MedievalFloorTileItemWoodChessDark
+  id: MedievalFloorTileItemWoodChessDarkRecipe
+  result: MedievalFloorTileItemWoodChessDark5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChessLight
-  result: MedievalFloorTileItemWoodChessLight
+  id: MedievalFloorTileItemWoodChessLightRecipe
+  result: MedievalFloorTileItemWoodChessLight5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChessRed
-  result: MedievalFloorTileItemWoodChessRed
+  id: MedievalFloorTileItemWoodChessRedRecipe
+  result: MedievalFloorTileItemWoodChessRed5
 
-## Total Smelter
+## Плавильня
+
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalIronIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalIronIngotRecipe
   result: MedievalIronIngot1
-  completetime: 10
   materials:
-    MedievalRawIron: 2
-    MedievalRawCoal: 1
+    MedievalRawIron: 200
+    MedievalRawCoal: 100
 
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalSteelIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalSteelIngotRecipe
   result: MedievalSteelIngot1
-  completetime: 10
   materials:
-    MedievalRawIron: 3
-    MedievalRawCoal: 1
+    MedievalRawIron: 300
+    MedievalRawCoal: 100
 
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalSilverIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalSilverIngotRecipe
   result: MedievalSilverIngot1
-  completetime: 10
   materials:
-    MedievalRawSilver: 5
-    MedievalRawCoal: 1
+    MedievalRawSilver: 500
+    MedievalRawCoal: 100
 
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalGoldIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalGoldIngotRecipe
   result: MedievalGoldIngot1
-  completetime: 10
   materials:
-    MedievalRawGold: 5
-    MedievalRawCoal: 1
+    MedievalRawGold: 500
+    MedievalRawCoal: 100
 
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalMithrilIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalMithrilIngotRecipe
   result: MedievalMithrilIngot1
-  completetime: 10
   materials:
-    MedievalRawMithril: 3
-    MedievalRawCoal: 1
+    MedievalRawMithril: 300
+    MedievalRawCoal: 100
 
 - type: latheRecipe
-  parent: MedievalBaseSmelter
-  id: MedievalAdamantineIngot
+  parent: MedievalRawProcessingRecipe
+  id: MedievalAdamantineIngotRecipe
   result: MedievalAdamantineIngot1
-  completetime: 10
   materials:
-    MedievalRawAdamantine: 3
-    MedievalRawCoal: 1
+    MedievalRawAdamantine: 300
+    MedievalRawCoal: 100
+
+# Кузня
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalSawmillDetailRecipe
+  result: MedievalSawmillDetail
+  materials:
+    MedievalProcessedIron: 100
+
+- type: latheRecipe
+  parent: MedievalBaseToolsRecipe
+  id: MedievalConstructionToolsRecipe
+  result: MedievalConstructionTools
+  materials:
+    MedievalProcessedIron: 100
+    MedievalProcessedWood: 100
+
+# Каменоломня
+
+- type: latheRecipe
+  parent: MedievalBaseDetailsRecipe
+  id: MedievalSmelterDetailRecipe
+  result: MedievalSmelterDetail
+  materials:
+    MedievalProcessedStone: 300
+
+# Общее
+
+- type: latheRecipe
+  parent: MedievalMaterialProcessingRecipe
+  id: MedievaHammerAmmoRecipe
+  result: MedievaConstructionToolsAmmo
+  materials:
+    MedievalProcessedWood: 100
+    MedievalProcessedStone: 200
+    MedievalProcessedIron: 100

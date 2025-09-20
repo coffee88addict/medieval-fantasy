@@ -30,8 +30,10 @@
     - MedievalWoodProcessing
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 5
-      MedievalRawManaCrystal: 1
+      MedievalProcessedWood: 504
+      MedievalRawManaCrystal: 100
+      MedievalProcessedIron: 4
+      MedievalProcessedStone: 6
 
 - type: entity
   parent: MedievalBaseLathe
@@ -64,8 +66,10 @@
     - MedievalWoodProcessing
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 4
-      MedievalRawManaCrystal: 1
+      MedievalProcessedWood: 404
+      MedievalRawManaCrystal: 100
+      MedievalProcessedIron: 4
+      MedievalProcessedStone: 6
 
 # Руды
 - type: entity
@@ -99,6 +103,43 @@
     - MedievalBasicBlacksmithing
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 1
-      MedievalRawManaCrystal: 1
-      MedievalProcessedStone: 5
+      MedievalProcessedWood: 104
+      MedievalRawManaCrystal: 100
+      MedievalProcessedStone: 606
+      MedievalProcessedIron: 4
+
+- type: entity
+  parent: MedievalBaseLathe
+  id: MedievalAnvil
+  name: Наковальня
+  description: Тяжёлая железная наковальня, используемая для ковки и обработки металла. Необходимый инструмент кузнеца для создания оружия, брони и инструментов.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Machines/anvil.rsi
+    layers:
+      - state: icon
+        map: ["enum.LatheVisualLayers.IsRunning"]
+      - state: inserting
+        map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: MedievalAnvilDetail
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+        - MedievalAnvilMaterialStorage
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    defaultProductionAmount: 1
+    staticPacks:
+    - MedievalAnvil
+  - type: NeededSkillForInteract
+    neededSkills:
+    - MedievalBasicBlacksmithing
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 104
+      MedievalRawManaCrystal: 100
+      MedievalProcessedIron: 504
+      MedievalProcessedStone: 6

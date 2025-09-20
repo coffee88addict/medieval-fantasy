@@ -54,6 +54,11 @@
     sprite: _DeadSpace/_Medieval/Objects/Machines/parts.rsi
     state: box_0
     snapCardinals: true
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 4
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 4
 
 - type: entity
   id: MedievalMachineFrame
@@ -123,3 +128,9 @@
           whitelist:
             components:
             - MachineBoard
+    - type: PhysicalComposition
+      materialComposition:
+        MedievalProcessedWood: 4
+        MedievalProcessedStone: 6
+        MedievalProcessedIron: 4
+        MedievalRawManaCrystal: 100

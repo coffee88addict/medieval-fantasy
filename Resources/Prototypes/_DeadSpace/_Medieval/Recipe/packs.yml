@@ -1,37 +1,48 @@
 - type: latheRecipePack
   id: MedievalSawmillStatic
   recipes:
-  - MedievalBoard
+  - MedievalBoardRecipe
+  - MedievalPartRodWoodRecipe
 
 - type: latheRecipePack
   id: MedievalCarpenterTable
   recipes:
-  - MedievalBucket
-  - MedievalFloorTileItemWoodParquet
-  - MedievalFloorTileItemWoodBlack
-  - MedievalFloorTileItemWoodLight
-  - MedievalFloorTileItemWoodRed
-  - MedievalFloorTileItemWoodLargeBlack
-  - MedievalFloorTileItemWoodLargeDark
-  - MedievalFloorTileItemWoodLargeLight
-  - MedievalFloorTileItemWoodLargeRed
-  - MedievalFloorTileItemWoodParquetBlack
-  - MedievalFloorTileItemWoodParquetDark
-  - MedievalFloorTileItemWoodParquetLight
-  - MedievalFloorTileItemWoodParquetRed
-  - MedievalFloorTileItemWoodChess
-  - MedievalFloorTileItemWoodChessBlack
-  - MedievalFloorTileItemWoodChessDark
-  - MedievalFloorTileItemWoodChessLight
-  - MedievalFloorTileItemWoodChessRed
+  - MedievalBucketRecipe
+  - MedievalCarpenterTableDetailRecipe
+  - MedievalAlchemTableDetailRecipe
+  - MedievalReagentGrinderDetailRecipe
+  - MedievalHotplateDetailRecipe
+  - MedievalFloorTileItemWoodParquetRecipe
+  - MedievalFloorTileItemWoodBlackRecipe
+  - MedievalFloorTileItemWoodLightRecipe
+  - MedievalFloorTileItemWoodRedRecipe
+  - MedievalFloorTileItemWoodLargeBlackRecipe
+  - MedievalFloorTileItemWoodLargeDarkRecipe
+  - MedievalFloorTileItemWoodLargeLightRecipe
+  - MedievalFloorTileItemWoodLargeRedRecipe
+  - MedievalFloorTileItemWoodParquetBlackRecipe
+  - MedievalFloorTileItemWoodParquetDarkRecipe
+  - MedievalFloorTileItemWoodParquetLightRecipe
+  - MedievalFloorTileItemWoodParquetRedRecipe
+  - MedievalFloorTileItemWoodChessRecipe
+  - MedievalFloorTileItemWoodChessBlackRecipe
+  - MedievalFloorTileItemWoodChessDarkRecipe
+  - MedievalFloorTileItemWoodChessLightRecipe
+  - MedievalFloorTileItemWoodChessRedRecipe
 
 
 - type: latheRecipePack
   id: MedievalSmelter
   recipes:
-  - MedievalIronIngot
-  - MedievalSteelIngot
-  - MedievalSilverIngot
-  - MedievalGoldIngot
-  - MedievalMithrilIngot
-  - MedievalAdamantineIngot
+  - MedievalIronIngotRecipe
+  - MedievalSteelIngotRecipe
+  - MedievalSilverIngotRecipe
+  - MedievalGoldIngotRecipe
+  - MedievalMithrilIngotRecipe
+  - MedievalAdamantineIngotRecipe
+
+- type: latheRecipePack
+  id: MedievalAnvil
+  recipes:
+  - MedievaHammerAmmoRecipe
+  - MedievalSawmillDetailRecipe

@@ -40,5 +40,7 @@
       machine_parts: !type:Container
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 2
-      MedievalRawManaCrystal: 1
+      MedievalProcessedWood: 204
+      MedievalRawManaCrystal: 100
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 4

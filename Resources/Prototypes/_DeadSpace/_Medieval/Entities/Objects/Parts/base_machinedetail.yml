@@ -15,8 +15,3 @@
       - state: detail-inhand-left
       right:
       - state: detail-inhand-right
-  # - type: StaticPrice
-  #   price: 100
-  - type: PhysicalComposition
-    materialComposition:
-      Steel: 400

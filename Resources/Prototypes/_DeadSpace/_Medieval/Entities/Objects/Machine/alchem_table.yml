@@ -60,5 +60,7 @@
     - MedievalAlchem
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 5
-      MedievalRawManaCrystal: 1
+      MedievalProcessedWood: 504
+      MedievalRawManaCrystal: 100
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 4

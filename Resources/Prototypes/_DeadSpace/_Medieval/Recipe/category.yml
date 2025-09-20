@@ -7,9 +7,13 @@
   name: lathe-medieval-category-tile
 
 - type: latheCategory
-  id: MedievalBlacksmithingCategory
-  name: lathe-medieval-category-blacksmithing
+  id: MedievalRawProcessingCategory
+  name: lathe-medieval-category-raw-processing
 
 - type: latheCategory
-  id: MedievalWoodProcessingCategory
-  name: lathe-medieval-category-wood-processing
+  id: MedievalMaterialProcessingCategory
+  name: lathe-medieval-category-material-processing
+
+- type: latheCategory
+  id: MedievalDetailsCategory
+  name: lathe-medieval-category-details
