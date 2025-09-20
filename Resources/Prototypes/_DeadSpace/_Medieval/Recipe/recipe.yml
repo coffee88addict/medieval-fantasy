@@ -8,10 +8,19 @@
 
 - type: latheRecipe
   abstract: true
-  id: MedievalBaseCarpenterTable
+  id: MedievalBaseToolsRecipe
   completetime: 10
   categories:
   - MedievalWoodProcessing
+
+- type: latheRecipe
+  abstract: true
+  id: MedievalBaseTileRecipe
+  completetime: 10
+  materials:
+    MedievalProcessedWood: 300
+  categories:
+  - MedievalTile
 
 - type: latheRecipe
   abstract: true
@@ -27,16 +36,106 @@
   result: MedievalBoard1
   completetime: 10
   materials:
-    MedievalRawWood: 100
+    MedievalRawWood: 1000
 
 ## Total Carpenter Table
 - type: latheRecipe
-  parent: MedievalBaseCarpenterTable
+  parent: MedievalBaseToolsRecipe
   id: MedievalBucket
   result: MedievalBucket
   completetime: 10
   materials:
-    MedievalProcessedWood: 100
+    MedievalProcessedWood: 1000
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodParquet
+  result: MedievalFloorTileItemWoodParquet
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodBlack
+  result: MedievalFloorTileItemWoodBlack
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodDark
+  result: MedievalFloorTileItemWoodDark
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLight
+  result: MedievalFloorTileItemWoodLight
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodRed
+  result: MedievalFloorTileItemWoodRed
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLargeBlack
+  result: MedievalFloorTileItemWoodLargeBlack
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLargeDark
+  result: MedievalFloorTileItemWoodLargeDark
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLargeLight
+  result: MedievalFloorTileItemWoodLargeLight
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLargeRed
+  result: MedievalFloorTileItemWoodLargeRed
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodParquetBlack
+  result: MedievalFloorTileItemWoodParquetBlack
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodParquetDark
+  result: MedievalFloorTileItemWoodParquetDark
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodParquetLight
+  result: MedievalFloorTileItemWoodParquetLight
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodParquetRed
+  result: MedievalFloorTileItemWoodParquetRed
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChess
+  result: MedievalFloorTileItemWoodChess
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChessBlack
+  result: MedievalFloorTileItemWoodChessBlack
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChessDark
+  result: MedievalFloorTileItemWoodChessDark
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChessLight
+  result: MedievalFloorTileItemWoodChessLight
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChessRed
+  result: MedievalFloorTileItemWoodChessRed
 
 ## Total Smelter
 - type: latheRecipe
@@ -45,8 +144,8 @@
   result: MedievalIronIngot1
   completetime: 10
   materials:
-    MedievalRawIron: 100
-    MedievalRawCoal: 100
+    MedievalRawIron: 1000
+    MedievalRawCoal: 1000
 
 - type: latheRecipe
   parent: MedievalBaseSmelter
@@ -54,8 +153,8 @@
   result: MedievalSteelIngot1
   completetime: 10
   materials:
-    MedievalRawIron: 200
-    MedievalRawCoal: 100
+    MedievalRawIron: 2000
+    MedievalRawCoal: 1000
 
 - type: latheRecipe
   parent: MedievalBaseSmelter
@@ -63,8 +162,8 @@
   result: MedievalSilverIngot1
   completetime: 10
   materials:
-    MedievalRawSilver: 100
-    MedievalRawCoal: 100
+    MedievalRawSilver: 1000
+    MedievalRawCoal: 1000
 
 - type: latheRecipe
   parent: MedievalBaseSmelter
@@ -72,8 +171,8 @@
   result: MedievalGoldIngot1
   completetime: 10
   materials:
-    MedievalRawGold: 100
-    MedievalRawCoal: 100
+    MedievalRawGold: 1000
+    MedievalRawCoal: 1000
 
 - type: latheRecipe
   parent: MedievalBaseSmelter
@@ -81,8 +180,8 @@
   result: MedievalMithrilIngot1
   completetime: 10
   materials:
-    MedievalRawMithril: 100
-    MedievalRawCoal: 100
+    MedievalRawMithril: 1000
+    MedievalRawCoal: 1000
 
 - type: latheRecipe
   parent: MedievalBaseSmelter
@@ -90,5 +189,5 @@
   result: MedievalAdamantineIngot1
   completetime: 10
   materials:
-    MedievalRawAdamantine: 100
-    MedievalRawCoal: 100
+    MedievalRawAdamantine: 1000
+    MedievalRawCoal: 1000

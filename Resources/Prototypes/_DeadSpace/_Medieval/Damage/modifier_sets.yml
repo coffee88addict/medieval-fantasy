@@ -1,10 +1,19 @@
 - type: damageModifierSet
   id: MedievalWood
   coefficients:
-    Blunt: 0.5
-    Slash: 0.5
-    Piercing: 0.3
+    Blunt: 1
+    Slash: 1
+    Piercing: 1
     Heat: 1
+    Structural: 1
+
+- type: damageModifierSet
+  id: MedievalStone
+  coefficients:
+    Blunt: 0.7
+    Slash: 0.7
+    Piercing: 0.7
+    Heat: 0.3
     Structural: 1
 
 - type: damageModifierSet
@@ -63,3 +72,12 @@
     Bloodloss: 0
     Asphyxiation: 0
     Structural: 0
+
+- type: damageModifierSet
+  id: MedievalIron
+  coefficients:
+    Blunt: 0.5
+    Slash: 0.5
+    Piercing: 0.7
+    Heat: 0.3
+    Structural: 1

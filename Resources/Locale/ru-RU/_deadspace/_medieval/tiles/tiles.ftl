@@ -1,2 +1,11 @@
 tiles-dirt-medieval-floor = средневековая земля
 tiles-medieval-lattice = средневековая решётка
+tiles-medieval-grass = трава
+tiles-stone-tile = каменный грунт
+tiles-medieval-grass-dark-green = тёмно-зелёная трава
+tiles-medieval-grass-crystal = кристаллическая трава
+tiles-medieval-grass-red = красная трава
+tiles-medieval-grass-dark = тёмная трава
+tiles-medieval-grass-dark2 = тёмная трава 2
+tiles-medieval-snow-ash = снег
+tiles-medieval-ash = пепел

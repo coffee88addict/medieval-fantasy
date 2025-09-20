@@ -17,3 +17,5 @@
   supportedGroups:
   - Brute
   - Burn
+  supportedTypes:
+  - Structural

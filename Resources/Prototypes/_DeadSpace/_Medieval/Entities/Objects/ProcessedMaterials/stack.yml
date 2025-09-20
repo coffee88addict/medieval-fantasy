@@ -6,6 +6,13 @@
   maxCount: 5
 
 - type: stack
+  id: MedievalRodWood
+  name: stack-medieval-rod-wood
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/parts.rsi, state: rods, color: "#8B4513" }
+  spawn: MedievalPartRodWood1
+  maxCount: 5
+
+- type: stack
   id: MedievalProcessedIron
   name: stack-medieval-processed-iron
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/ingot.rsi, state: iron }

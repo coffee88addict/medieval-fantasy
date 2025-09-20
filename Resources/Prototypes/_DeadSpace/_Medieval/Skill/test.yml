@@ -108,8 +108,9 @@
         sound:
           collection: MetalBreak
   - type: AddWearAfterUse
+    triggers: [Learn, MeleeHit]
     damage:
-      type:
+      types:
         Slash: 1
   - type: LearnSkillWhenUsing
     duration: 2

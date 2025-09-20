@@ -42,8 +42,9 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: AddWearAfterUse
+    triggers: [Learn, MeleeHit]
     damage:
-      type:
+      types:
         Slash: 1
 
 

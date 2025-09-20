@@ -1,0 +1,454 @@
+- type: entity
+  parent: FloorTileItemBase
+  id: MedievalFloorTileItemBase
+  suffix: Средневековье
+  abstract: true
+
+# Трава
+
+- type: entity
+  id: MedievalFloorTileItemGrass
+  parent: MedievalFloorTileItemBase
+  name: трава
+  components:
+  - type: Sprite
+    state: astrograss
+  - type: Item
+    heldPrefix: grass
+  - type: FloorTile
+    outputs:
+    - MedievalFloorAstroGrass
+  - type: Stack
+    stackType: MedievalFloorTileGrass
+
+- type: entity
+  id: MedievalFloorTileItemGrassDarkGreen
+  parent: MedievalFloorTileItemBase
+  name: тёмно-зелёная трава
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: darkgreengrass
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: darkgreengrass
+  - type: FloorTile
+    outputs:
+    - MedievalFloorGrassDarkGreen
+  - type: Stack
+    stackType: MedievalFloorTileGrassDarkGreen
+
+- type: entity
+  id: MedievalFloorTileItemGrassCrystal
+  parent: MedievalFloorTileItemBase
+  name: кристаллическая трава
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: crysgrass
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: crysgrass
+  - type: FloorTile
+    outputs:
+    - MedievalFloorGrassGrassCrystal
+  - type: Stack
+    stackType: MedievalFloorTileGrassGrassCrystal
+
+- type: entity
+  id: MedievalFloorTileItemGrassRed
+  parent: MedievalFloorTileItemBase
+  name: красная трава
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: redgrass
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: redgrass
+  - type: FloorTile
+    outputs:
+    - MedievalFloorGrassGrassRed
+  - type: Stack
+    stackType: MedievalFloorTileGrassGrassRed
+
+- type: entity
+  id: MedievalFloorTileItemGrassDark
+  parent: MedievalFloorTileItemBase
+  name: тёмная трава
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: darkgrass
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: darkgrass
+  - type: FloorTile
+    outputs:
+    - MedievalFloorGrassDark
+  - type: Stack
+    stackType: MedievalFloorTileGrassDark
+
+- type: entity
+  id: MedievalFloorTileItemGrassDark2
+  parent: MedievalFloorTileItemBase
+  name: тёмная трава
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: darkgrass2
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: darkgrass2
+  - type: FloorTile
+    outputs:
+    - MedievalFloorGrassDark2
+  - type: Stack
+    stackType: MedievalFloorTileGrassGrassDark2
+
+# Снег
+
+- type: entity
+  id: MedievalFloorTileItemSnow
+  parent: MedievalFloorTileItemBase
+  name: снег
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: snow
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: snow
+  - type: FloorTile
+    outputs:
+    - MedievalFloorSnow
+  - type: Stack
+    stackType: MedievalFloorTileSnow
+
+# Камушек
+
+- type: entity
+  id: MedievalFloorTileItemAsh
+  parent: MedievalFloorTileItemBase
+  name: пепел
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    state: ash
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Tiles/tile.rsi
+    heldPrefix: ash
+  - type: FloorTile
+    outputs:
+    - MedievalFloorAsh
+  - type: Stack
+    stackType: MedievalFloorTileAsh
+
+
+# Дерево
+
+- type: entity
+  name: parquet wood floor tile
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodParquet
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_parquet
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodParquet
+  - type: Stack
+    stackType: MedievalFloorTileWood
+
+- type: entity
+  name: напольная плитка из черного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodBlack
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodBlack
+
+- type: entity
+  name: напольная плитка из темного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodDark
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodDark
+
+- type: entity
+  name: напольная плитка из светлого дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLight
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLight
+
+- type: entity
+  name: напольная плитка из красного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodRed
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodRed
+
+- type: entity
+  name: большой пол из черного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodLargeBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_large_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLargeBlack
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLargeBlack
+
+- type: entity
+  name: большой пол из темного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodLargeDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_large_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLargeDark
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLargeDark
+
+- type: entity
+  name: большой пол из светлого дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodLargeLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_large_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLargeLight
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLargeLight
+
+- type: entity
+  name: большой пол из красного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodLargeRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_large_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLargeRed
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLargeRed
+
+- type: entity
+  name: паркетный пол из черного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodParquetBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_parquet_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodParquetBlack
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodParquetBlack
+
+- type: entity
+  name: паркетный пол из темного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodParquetDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_parquet_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodParquetDark
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodParquetDark
+
+- type: entity
+  name: паркетный пол из светлого дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodParquetLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_parquet_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodParquetLight
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodParquetLight
+
+- type: entity
+  name: паркетный пол из красного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodParquetRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_parquet_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodParquetRed
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodParquetRed
+
+- type: entity
+  name: шахматный деревянный пол
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodChess
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_chess
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodChess
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodChess
+
+- type: entity
+  name: шахматный пол из черного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodChessBlack
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_chess_black
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-black
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodChessBlack
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodChessBlack
+
+- type: entity
+  name: шахматный пол из темного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodChessDark
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_chess_dark
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodChessDark
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodChessDark
+
+- type: entity
+  name: шахматный пол из светлого дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodChessLight
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_chess_light
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-light
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodChessLight
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodChessLight
+
+- type: entity
+  name: шахматный пол из красного дерева
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodChessRed
+  components:
+  - type: Sprite
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    state: wood_chess_red
+  - type: Item
+    sprite: _Corvax/Objects/Tiles/wood.rsi
+    heldPrefix: wood-red
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodChessRed
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodChessRed

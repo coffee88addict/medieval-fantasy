@@ -33,12 +33,19 @@ public sealed class WearSystem : EntitySystem
         if (!Resolve(uid, ref component, false))
             return;
 
-        _damage.TryChangeDamage(
-                uid,
+        Console.WriteLine("Count " + damage.DamageDict.Count.ToString());
+
+        foreach (var value in damage.DamageDict.Values)
+        {
+            Console.WriteLine(value);
+        }
+
+        _damage.TryChangeDamage(uid,
                 damage,
                 origin: uid,
                 ignoreResistances: false,
                 interruptsDoAfters: false);
+
 
         if (component.Sound != null)
             _audio.PlayPvs(component.Sound, Transform(uid).Coordinates);

@@ -12,4 +12,22 @@ public sealed partial class AddWearAfterUseComponent : Component
     /// </summary>
     [DataField]
     public DamageSpecifier Damage = new DamageSpecifier();
+
+    [DataField]
+    public WearTrigger Triggers = WearTrigger.None;
+}
+
+/// <summary>
+///     Какие типы действий могут вызывать износ предмета.
+/// </summary>
+[Flags]
+public enum WearTrigger
+{
+    None = 0,
+    MeleeHit = 1 << 0,
+    Interact = 1 << 1,
+    TileTool = 1 << 2,
+    Learn = 1 << 3,
+
+    All = MeleeHit | Interact | TileTool | Learn
 }

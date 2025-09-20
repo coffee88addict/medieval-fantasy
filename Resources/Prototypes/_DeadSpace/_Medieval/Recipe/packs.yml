@@ -7,6 +7,24 @@
   id: MedievalCarpenterTable
   recipes:
   - MedievalBucket
+  - MedievalFloorTileItemWoodParquet
+  - MedievalFloorTileItemWoodBlack
+  - MedievalFloorTileItemWoodLight
+  - MedievalFloorTileItemWoodRed
+  - MedievalFloorTileItemWoodLargeBlack
+  - MedievalFloorTileItemWoodLargeDark
+  - MedievalFloorTileItemWoodLargeLight
+  - MedievalFloorTileItemWoodLargeRed
+  - MedievalFloorTileItemWoodParquetBlack
+  - MedievalFloorTileItemWoodParquetDark
+  - MedievalFloorTileItemWoodParquetLight
+  - MedievalFloorTileItemWoodParquetRed
+  - MedievalFloorTileItemWoodChess
+  - MedievalFloorTileItemWoodChessBlack
+  - MedievalFloorTileItemWoodChessDark
+  - MedievalFloorTileItemWoodChessLight
+  - MedievalFloorTileItemWoodChessRed
+
 
 - type: latheRecipePack
   id: MedievalSmelter

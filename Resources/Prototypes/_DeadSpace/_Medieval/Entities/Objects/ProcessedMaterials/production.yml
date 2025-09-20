@@ -269,3 +269,70 @@
   components:
   - type: Stack
     count: 5
+
+- type: entity
+  parent: BaseItem
+  id: MedievalPartRodWood
+  name: деревянный стержень
+  suffix: Средневековье
+  components:
+  - type: Damageable
+    damageContainer: MedievalInorganic
+    damageModifierSet: MedievalWood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - ConstructionMaterial
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 100
+  - type: Stack
+    stackType: MedievalRodWood
+    baseLayer: base
+    layerStates:
+    - rods
+    - rods_2
+    - rods_3
+    - rods_4
+    - rods_5
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Materials/parts.rsi
+    state: rods_5
+    color: "#8B4513"
+    layers:
+    - state: rods_5
+      map: ["base"]
+  - type: Item
+    size: Normal
+    heldPrefix: rods
+    sprite: Objects/Materials/parts.rsi
+  - type: Appearance
+
+- type: entity
+  parent: MedievalPartRodWood
+  id: MedievalPartRodWood1
+  components:
+  - type: Tag
+    tags:
+    - ConstructionMaterial
+  - type: Sprite
+    state: rods
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MedievalPartRodWood
+  id: MedievalPartRodWood6
+  components:
+  - type: Tag
+    tags:
+    - ConstructionMaterial
+  - type: Stack
+    count: 6
