@@ -59,7 +59,7 @@
 - type: latheRecipe
   parent: MedievalBaseToolsRecipe
   id: MedievalBucketRecipe
-  result: MedievalBucketRecipe
+  result: MedievalBucket
   materials:
     MedievalProcessedWood: 100
 
@@ -90,6 +90,26 @@
   result: MedievalHotplateDetail
   materials:
     MedievalProcessedWood: 100
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodRecipe
+  result: MedievalFloorTileItemWood5
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodLargeRecipe
+  result: MedievalFloorTileItemWoodLarge5
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodPatternRecipe
+  result: MedievalFloorTileItemWoodPattern5
+
+- type: latheRecipe
+  parent: MedievalBaseTileRecipe
+  id: MedievalFloorTileItemWoodChessRecipe
+  result: MedievalFloorTileItemWoodChess5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe
@@ -155,11 +175,6 @@
   parent: MedievalBaseTileRecipe
   id: MedievalFloorTileItemWoodParquetRedRecipe
   result: MedievalFloorTileItemWoodParquetRed5
-
-- type: latheRecipe
-  parent: MedievalBaseTileRecipe
-  id: MedievalFloorTileItemWoodChessRecipe
-  result: MedievalFloorTileItemWoodChess5
 
 - type: latheRecipe
   parent: MedievalBaseTileRecipe

@@ -29,6 +29,10 @@
   - MedievalFloorTileItemWoodChessDarkRecipe
   - MedievalFloorTileItemWoodChessLightRecipe
   - MedievalFloorTileItemWoodChessRedRecipe
+  - MedievalFloorTileItemWoodRecipe
+  - MedievalFloorTileItemWoodPatternRecipe
+  - MedievalFloorTileItemWoodChessRecipe
+  - MedievalFloorTileItemWoodLargeRecipe
 
 
 - type: latheRecipePack
@@ -46,3 +50,4 @@
   recipes:
   - MedievaHammerAmmoRecipe
   - MedievalSawmillDetailRecipe
+  - MedievalConstructionToolsRecipe

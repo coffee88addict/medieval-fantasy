@@ -274,26 +274,6 @@
 ## Дерево
 
 - type: tile
-  id: MedievalFloorWoodChessDark
-  name: tiles-wood-chess-dark
-  sprite: /Textures/_Corvax/Tiles/wood_chess_dark.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  baseTurf: MedievalLattice
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepWood
-  barestepSounds:
-    collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodDark
-  heatCapacity: 10000
-
-- type: tile
   id: MedievalFloorWood
   name: tiles-wood
   sprite: /Textures/Tiles/wood.png
@@ -314,7 +294,47 @@
   heatCapacity: 10000
 
 - type: tile
-  id: MedievalFloorWoodTile
+  id: MedievalFloorWoodChess
+  name: tiles-wood-chess
+  sprite: /Textures/_Corvax/Tiles/wood_chess.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: MedievalLattice
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: MedievalFloorTileItemWoodChess
+  heatCapacity: 10000
+
+- type: tile
+  id: MedievalFloorWoodChessDark
+  name: tiles-wood-chess-dark
+  sprite: /Textures/_Corvax/Tiles/wood_chess_dark.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: MedievalLattice
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: MedievalFloorTileItemWoodChessDark
+  heatCapacity: 10000
+
+- type: tile
+  id: MedievalFloorWoodTile2
   name: tiles-wood2
   sprite: /Textures/Tiles/wood_tile.png
   variants: 4
@@ -353,7 +373,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MaterialWoodPlank1
+  itemDrop: MedievalPartRodWood1
   heatCapacity: 10000
 
 - type: tile
@@ -374,46 +394,6 @@
   barestepSounds:
     collection: BarestepWood
   itemDrop: MedievalFloorTileItemWoodLarge
-  heatCapacity: 10000
-
-- type: tile
-  id: MedievalFloorWoodParquet
-  name: tiles-wood-parquet
-  sprite: /Textures/_Corvax/Tiles/wood_parquet.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  baseTurf: MedievalLattice
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepWood
-  barestepSounds:
-    collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWood
-  heatCapacity: 10000
-
-- type: tile
-  id: MedievalFloorWoodChess
-  name: tiles-wood-chess
-  sprite: /Textures/_Corvax/Tiles/wood_chess.png
-  variants: 4
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  baseTurf: MedievalLattice
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepWood
-  barestepSounds:
-    collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWood
   heatCapacity: 10000
 
 - type: tile
@@ -473,7 +453,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodBlack
+  itemDrop: MedievalFloorTileItemWoodParquetBlack
   heatCapacity: 10000
 
 - type: tile
@@ -493,7 +473,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodBlack
+  itemDrop: MedievalFloorTileItemWoodChessBlack
   heatCapacity: 10000
 
 - type: tile
@@ -533,7 +513,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodDark
+  itemDrop: MedievalFloorTileItemWoodLargeDark
   heatCapacity: 10000
 
 - type: tile
@@ -553,7 +533,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodDark
+  itemDrop: MedievalFloorTileItemWoodParquetDark
   heatCapacity: 10000
 
 - type: tile
@@ -593,7 +573,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodLight
+  itemDrop: MedievalFloorTileItemWoodLargeLight
   heatCapacity: 10000
 
 - type: tile
@@ -613,7 +593,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodLight
+  itemDrop: MedievalFloorTileItemWoodParquetLight
   heatCapacity: 10000
 
 - type: tile
@@ -633,7 +613,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodLight
+  itemDrop: MedievalFloorTileItemWoodChessLight
   heatCapacity: 10000
 
 - type: tile
@@ -673,7 +653,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodRed
+  itemDrop: MedievalFloorTileItemWoodLargeRed
   heatCapacity: 10000
 
 - type: tile
@@ -693,7 +673,7 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodRed
+  itemDrop: MedievalFloorTileItemWoodParquetRed
   heatCapacity: 10000
 
 - type: tile
@@ -713,5 +693,5 @@
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
-  itemDrop: MedievalFloorTileItemWoodRed
+  itemDrop: MedievalFloorTileItemWoodChessRed
   heatCapacity: 10000

@@ -148,7 +148,73 @@
 # Дерево
 
 - type: entity
-  name: паркет деревянная напольная плитка
+  name: large wood floor
+  parent: FloorTileItemBase
+  id: MedievalFloorTileItemWoodLarge
+  components:
+  - type: Sprite
+    state: wood-large
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodLarge
+  - type: Stack
+    stackType: MedievalFloorTileItemWoodLarge
+
+- type: entity
+  parent: MedievalFloorTileItemWoodLarge
+  id: MedievalFloorTileItemWoodLarge5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  name: деревянная плитка
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWood
+  components:
+  - type: Sprite
+    state: wood
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWood
+  - type: Stack
+    stackType: MedievalFloorTileItemWood
+
+- type: entity
+  parent: MedievalFloorTileItemWood
+  id: MedievalFloorTileItemWood5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  name: деревянный пол с рисунком
+  parent: MedievalFloorTileItemBase
+  id: MedievalFloorTileItemWoodPattern
+  components:
+  - type: Sprite
+    state: woodpatternfloor
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+      - MedievalFloorWoodTile2
+  - type: Stack
+    stackType: FloorTileWoodPattern
+
+- type: entity
+  parent: MedievalFloorTileItemWoodPattern
+  id: MedievalFloorTileItemWoodPattern5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  name: деревянный паркет
   parent: MedievalFloorTileItemBase
   id: MedievalFloorTileItemWoodParquet
   components:
@@ -160,9 +226,9 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - MedievalFloorWoodParquet
+      - MedievalFloorWood
   - type: Stack
-    stackType: MedievalFloorTileWood
+    stackType: MedievalFloorTileItemWoodParquet
   - type: PhysicalComposition
     materialComposition:
       MedievalProcessedWood: 20
