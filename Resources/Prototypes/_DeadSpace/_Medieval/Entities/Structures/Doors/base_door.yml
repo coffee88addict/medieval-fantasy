@@ -68,5 +68,4 @@
   - type: ContainerContainer
     containers:
       lock-container: !type:ContainerSlot
-        showContents: false
   - type: MedievalLockable
