@@ -104,6 +104,10 @@
   id: MedievalBunch
   name: связка ключей
   components:
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -133,9 +137,9 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      # - !type:EmptyContainersBehaviour
-      #   containers:
-      #   - storagebase
+      - !type:EmptyContainersBehaviour
+        containers:
+        - storagebase
   - type: ItemMapper
     mapLayers:
       bunch1:
