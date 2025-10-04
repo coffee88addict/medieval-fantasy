@@ -32,15 +32,15 @@
   components:
   - type: Material
   - type: Sprite
-    sprite: _DeadSpace/_Medieval/Objects/Materials/raw.rsi
+    sprite: _DeadSpace/_Medieval/Objects/Materials/misk.rsi
   - type: Item
-    sprite: _DeadSpace/_Medieval/Objects/Materials/raw.rsi
+    sprite: _DeadSpace/_Medieval/Objects/Materials/misk.rsi
     size: Normal
   - type: Tag
     tags:
     - MedievalRawMaterial
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: MedievalInorganic
   - type: Destructible
     thresholds:
     - trigger:

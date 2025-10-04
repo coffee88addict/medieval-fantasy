@@ -11,3 +11,10 @@
   toolName: tool-quality-swotting-tool-name
   spawn: MedievalPickaxe
   icon: { sprite: Objects/Weapons/Melee/pickaxe.rsi, state: pickaxe }
+
+- type: tool
+  id: MedievalScore
+  name: tool-quality-score-name
+  toolName: tool-quality-score-tool-name
+  spawn: MedievalHammer
+  icon: { sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi, state: hammer2 }

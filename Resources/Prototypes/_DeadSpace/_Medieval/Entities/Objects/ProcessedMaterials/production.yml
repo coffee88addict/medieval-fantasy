@@ -4,6 +4,15 @@
   categories: [ HideSpawnMenu ]
   name: доска
   components:
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Materials/board.rsi
+    layers:
+    - state: board
+      map: ["base"]
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Materials/board.rsi
+    heldPrefix: board
+    size: Normal
   - type: Stack
     stackType: MedievalBoard
     baseLayer: base
@@ -12,13 +21,6 @@
     - board_2
     - board_3
     - board_4
-  - type: Sprite
-    state: board
-    layers:
-    - state: board
-      map: ["base"]
-  - type: Item
-    heldPrefix: board
   - type: Tag
     tags:
     - MedievalAnvilMaterialStorage
@@ -293,6 +295,7 @@
   parent: BaseItem
   id: MedievalPartRodWood
   name: деревянный стержень
+  categories: [ HideSpawnMenu ]
   suffix: Средневековье
   components:
   - type: Damageable
@@ -359,47 +362,121 @@
   - type: Stack
     count: 6
 
-# - type: entity
-#   parent: MedievalBaseProcessedMaterial
-#   id: MedievalNail
-#   categories: [ HideSpawnMenu ]
-#   name: гвозди
-#   components:
-#   - type: Appearance
-#   - type: Stack
-#     stackType: MedievalNail
-#     baseLayer: base
-#     layerStates:
-#     - nail
-#     - nail_2
-#     - nail_3
-#     - nail_4
-#     - nail_5
-#   - type: Sprite
-#     sprite: _DeadSpace/_Medieval/Objects/Materials/nails.rsi
-#     state: nail
-#     layers:
-#     - state: stone
-#       map: ["base"]
-#   - type: Item
-#     heldPrefix: nail
-#     sprite: _DeadSpace/_Medieval/Objects/Materials/nails.rsi
-#     size: Normal
-#   - type: PhysicalComposition
-#     materialComposition:
-#       MedievalProcessedIron: 10
+- type: entity
+  name: ткань
+  description: Сотканное полотно, пригодное для пошива одежды, постелей и других вещей.
+  id: MedievalCloth
+  categories: [ HideSpawnMenu ]
+  parent: MedievalBaseProcessedMaterial
+  components:
+  - type: Stack
+    stackType: MedievalCloth
+    baseLayer: base
+    layerStates:
+    - cloth1
+    - cloth2
+    - cloth3
+    - cloth4
+  - type: Sprite
+    layers:
+    - state: cloth4
+      map: ["base"]
+  - type: Tag
+    tags:
+    - MedievalSewingMaterialStorage
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalCloth: 100
 
-# - type: entity
-#   id: MedievalNail1
-#   parent: MedievalNail
-#   components:
-#   - type: Stack
-#     count: 1
+- type: entity
+  parent: MedievalCloth
+  id: MedievalCloth1
+  components:
+  - type: Stack
+    count: 1
 
-# - type: entity
-#   id: MedievalNail10
-#   parent: MedievalNail
-#   suffix: Средневековье, 10
-#   components:
-#   - type: Stack
-#     count: 10
+- type: entity
+  parent: MedievalCloth
+  id: MedievalCloth5
+  suffix: Средневековье, 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  name: дублёная кожа
+  description: Прочно выделанная кожа, готовая для пошива одежды, обуви или брони. Гибкая и долговечная, ценится у ремесленников.
+  id: MedievalProcessedPelt
+  categories: [ HideSpawnMenu ]
+  parent: MedievalRawMaterialBase
+  components:
+  - type: Stack
+    stackType: MedievalProcessedPelt
+    baseLayer: base
+    layerStates:
+    - procPelt1
+    - procPelt2
+    - procPelt3
+  - type: Sprite
+    layers:
+    - state: procPelt3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - MedievalSewingMaterialStorage
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedPelt: 100
+
+- type: entity
+  parent: MedievalProcessedPelt
+  id: MedievalProcessedPelt1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MedievalProcessedPelt
+  id: MedievalProcessedPelt5
+  suffix: Средневековье, 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  name: стройматериалы
+  parent: BaseItem
+  suffix: Средневековье
+  categories: [ HideSpawnMenu ]
+  id: MedievalConstructionToolsAmmo
+  description: Материалы для строительства сооружений.
+  components:
+  - type: RCDAmmo
+  - type: Sprite
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
+    state: ammo
+  - type: Item
+    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
+    heldPrefix: ammo
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 100
+      MedievalProcessedStone: 200
+      MedievalProcessedIron: 100
+  - type: Stack
+    stackType: MedievalConstructionToolsAmmo
+
+- type: entity
+  parent: MedievalConstructionToolsAmmo
+  id: MedievalConstructionToolsAmmo1
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MedievalConstructionToolsAmmo
+  id: MedievalConstructionToolsAmmo5
+  suffix: Средневековье, 5
+  components:
+  - type: Stack
+    count: 5

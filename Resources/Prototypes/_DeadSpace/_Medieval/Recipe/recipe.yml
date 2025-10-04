@@ -301,7 +301,7 @@
 - type: latheRecipe
   parent: MedievalMaterialProcessingRecipe
   id: MedievaHammerAmmoRecipe
-  result: MedievaConstructionToolsAmmo
+  result: MedievalConstructionToolsAmmo
   materials:
     MedievalProcessedWood: 100
     MedievalProcessedStone: 200
@@ -316,6 +316,20 @@
   materials:
     MedievalProcessedStone: 300
 
-# Общее
+# Ткацкий станок
 
+- type: latheRecipe
+  parent: MedievalRawProcessingRecipe
+  id: MedievalClothRecipe
+  result: MedievalCloth1
+  materials:
+    MedievalRawCloth: 100
 
+- type: latheRecipe
+  parent: MedievalRawProcessingRecipe
+  id: MedievalProcessedPeltRecipe
+  result: MedievalProcessedPelt1
+  materials:
+    MedievalRawPelt: 100
+
+# Швейный станок

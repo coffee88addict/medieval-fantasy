@@ -84,11 +84,12 @@
   description: Уютный стул, обитый простой зелёной тканью. На нём удобно сидеть у очага после долгого дня.
   components:
   - type: Sprite
-  - type: PhysicalComposition # нужно rcd 3
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 10
-      MedievalProcessedStone: 20
-      MedievalProcessedIron: 10
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 7
+      MedievalProcessedIron: 3
+      MedievalCloth: 100
 
 - type: entity
   parent: MedievalBaseChair
@@ -98,11 +99,12 @@
   components:
   - type: Sprite
     state: chair2
-  - type: PhysicalComposition # нужно rcd 6
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 20
-      MedievalProcessedStone: 40
-      MedievalProcessedIron: 20
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 7
+      MedievalProcessedIron: 3
+      MedievalCloth: 200
 
 - type: entity
   parent: MedievalBaseChair
@@ -112,11 +114,15 @@
   components:
   - type: Sprite
     state: chair3
-  - type: PhysicalComposition # нужно rcd 6
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 20
-      MedievalProcessedStone: 40
-      MedievalProcessedIron: 20
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 7
+      MedievalProcessedIron: 3
+      MedievalCloth: 200
+  - type: Construction
+    graph: MedievalChair
+    node: сomfortableBed
 
 - type: entity
   parent: MedievalBaseChair
@@ -126,11 +132,15 @@
   components:
   - type: Sprite
     state: chair4
-  - type: PhysicalComposition # нужно rcd 3
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 10
-      MedievalProcessedStone: 20
-      MedievalProcessedIron: 10
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 7
+      MedievalProcessedIron: 3
+      MedievalCloth: 100
+  - type: Construction
+    graph: MedievalChair
+    node: chairEmeraldLuxury
 
 - type: entity
   parent: MedievalBaseChair
@@ -140,11 +150,14 @@
   components:
   - type: Sprite
     state: chair5
-  - type: PhysicalComposition # нужно rcd 3
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 10
-      MedievalProcessedStone: 20
-      MedievalProcessedIron: 10
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 7
+      MedievalProcessedIron: 3
+  - type: Construction
+    graph: MedievalChair
+    node: chairPlain
 
 - type: entity
   parent: MedievalBaseChair
@@ -156,6 +169,9 @@
     state: chair6
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 3
+      MedievalProcessedWood: 103
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
+  - type: Construction
+    graph: MedievalChair
+    node: stool

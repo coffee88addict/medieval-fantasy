@@ -101,15 +101,18 @@
   name: деревянный сундук
   description: Простой сундук для хранения вещей. Скрипит при открывании, но верно служит хозяину.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: chestWood
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate1.rsi
   - type: Icon
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate1.rsi
-  - type: PhysicalComposition # нужно rcd 3
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 10
-      MedievalProcessedStone: 20
-      MedievalProcessedIron: 10
+      MedievalProcessedWood: 103
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -117,6 +120,9 @@
   name: укреплённый деревянный сундук
   description: Сундук с железными скобами. Тяжёлый и надёжный, вскрыть его будет непросто.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: chestReinforced
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate2.rsi
   - type: Icon
@@ -132,11 +138,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 6
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 20
-      MedievalProcessedStone: 40
-      MedievalProcessedIron: 20
+      MedievalProcessedWood: 103
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 103
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -144,6 +150,9 @@
   name: украшенный укреплённый деревянный сундук
   description: Богато украшенный сундук с металлической окантовкой. Такой встречается в покоях знати.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: chestOrnate
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate3.rsi
   - type: Icon
@@ -159,11 +168,12 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 10
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 33
-      MedievalProcessedStone: 66
-      MedievalProcessedIron: 33
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
+      MedievalProcessedGold: 100
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -171,6 +181,9 @@
   name: роскошный деревянный сундук
   description: Великолепный сундук, украшенный резьбой. Выглядит так, будто внутри должно быть золото.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: chestLuxury
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate4.rsi
   - type: Icon
@@ -186,11 +199,12 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 12
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 40
-      MedievalProcessedStone: 80
-      MedievalProcessedIron: 40
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 103
+      MedievalProcessedGold: 100
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -198,6 +212,9 @@
   name: деревянный шкаф
   description: Старый шкаф с запахом дерева и пыли. Подходит для хранения одежды и секретов.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: wardrobeWood
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/wardrobe1.rsi
   - type: Icon
@@ -213,11 +230,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 4
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 13
-      MedievalProcessedStone: 26
-      MedievalProcessedIron: 13
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -225,6 +242,9 @@
   name: железный шкафчик
   description: Тяжёлый шкаф из железа. Хранит вещи надёжнее, чем многие стражи.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: wardrobeIron
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/wardrobe2.rsi
   - type: Icon
@@ -243,11 +263,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 20
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 66
-      MedievalProcessedStone: 132
-      MedievalProcessedIron: 66
+      MedievalProcessedWood: 103
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 203
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -255,6 +275,9 @@
   name: деревянный шкаф
   description: Шкаф с резными узорами. Когда-то принадлежал богатой семье.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: wardrobeCarved
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/wardrobe3.rsi
   - type: Icon
@@ -270,11 +293,11 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 7
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 23
-      MedievalProcessedStone: 46
-      MedievalProcessedIron: 23
+      MedievalProcessedWood: 403
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
 
 - type: entity
   parent: MedievalBaseCrate
@@ -282,6 +305,9 @@
   name: корзина
   description: Плетёная корзина из льна и дерева. Вмещает немного, но легко переносится.
   components:
+  - type: Construction
+    graph: MedievalCrate
+    node: basket
   - type: Sprite
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/basket.rsi
   - type: Icon
@@ -300,9 +326,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: PhysicalComposition # нужно rcd 1
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 3
-      MedievalProcessedStone: 6
-      MedievalProcessedIron: 3
+      MedievalProcessedWood: 6
+      MedievalProcessedStone: 14
+      MedievalProcessedIron: 6
 

@@ -61,9 +61,23 @@
   spawn: MedievalProcessedStone1
   maxCount: 5
 
-# - type: stack
-#   id: MedievalNail
-#   name: stack-medieval-nail
-#   icon: { sprite: /Textures//Textures/_DeadSpace/_Medieval/Objects/Materials/stone.rsi, state: nail }
-#   spawn: MedievalNail1
-#   maxCount: 10
+- type: stack
+  id: MedievalCloth
+  name: stack-medieval-processed-cloth
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth4 }
+  spawn: MedievalCloth1
+  maxCount: 5
+
+- type: stack
+  id: MedievalProcessedPelt
+  name: stack-medieval-processed-pelt
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: procPelt3 }
+  spawn: MedievalProcessedPelt1
+  maxCount: 5
+
+- type: stack
+  id: MedievalConstructionToolsAmmo
+  name: stack-medieval-tool-ammo
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi, state: ammo }
+  spawn: MedievalConstructionToolsAmmo1
+  maxCount: 5

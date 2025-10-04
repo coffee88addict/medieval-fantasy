@@ -7,13 +7,12 @@
   components:
   - type: Material
   - type: Sprite
-    sprite: _DeadSpace/_Medieval/Objects/Materials/board.rsi
+    sprite: _DeadSpace/_Medieval/Objects/Materials/misk.rsi
   - type: Item
-    sprite: _DeadSpace/_Medieval/Objects/Materials/board.rsi
+    sprite: _DeadSpace/_Medieval/Objects/Materials/misk.rsi
     size: Normal
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
+    damageContainer: MedievalInorganic
   - type: Destructible
     thresholds:
     - trigger:

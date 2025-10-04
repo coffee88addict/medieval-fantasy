@@ -77,3 +77,21 @@
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/crystal.rsi, state: mana }
   color: "#47f8ff"
   price: 3.07
+
+- type: material
+  id: MedievalRawPelt
+  stackEntity: MedievalPelt1
+  name: medieval-raw-materials-pelt
+  unit: materials-unit-chunk
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: pelt1 }
+  color: "#643932"
+  price: 5
+
+- type: material
+  id: MedievalRawCloth
+  stackEntity: FoodMedievalFlax
+  name: medieval-raw-materials-cloth
+  unit: materials-unit-chunk
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth1 }
+  color: "#949494"
+  price: 0.02

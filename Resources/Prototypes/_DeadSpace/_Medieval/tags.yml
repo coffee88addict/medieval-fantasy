@@ -18,3 +18,12 @@
 
 - type: Tag
   id: MedievalKey
+
+- type: Tag
+  id: MedievalTanneryMaterialStorage
+
+- type: Tag
+  id: MedievalLoomMaterialStorage
+
+- type: Tag
+  id: MedievalSewingMaterialStorage

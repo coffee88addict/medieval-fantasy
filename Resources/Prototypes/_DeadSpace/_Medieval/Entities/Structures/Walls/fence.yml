@@ -59,6 +59,9 @@
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighStraight
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: straight
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: straight
@@ -84,6 +87,9 @@
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighEnd
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: end
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: end
@@ -109,6 +115,9 @@
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighCorner
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: corner
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: corner
@@ -143,6 +152,9 @@
   parent: MedievalBaseFenceWood
   id: MedievalFenceWoodHighTJunction
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: tjunction
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: tjunction
@@ -179,6 +191,9 @@
   name: деревянные ворота для забора
   description: Ты хоть представляешь, что ждет тебя за этими воротами? Это может быть как туалет, так и роскошный особняк
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: gate
   - type: Sprite
     layers:
     - state: end
@@ -223,6 +238,9 @@
   parent: MedievalBaseFenceWoodSmall
   id: MedievalFenceWoodSmallStraight
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: straight_small
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: straight_small
@@ -247,6 +265,9 @@
   parent: MedievalBaseFenceWoodSmall
   id: MedievalFenceWoodSmallEnd
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: end_small
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: end_small
@@ -271,6 +292,9 @@
   parent: MedievalBaseFenceWoodSmall
   id: MedievalFenceWoodSmallCorner
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: corner_small
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: corner_small
@@ -304,6 +328,9 @@
   parent: MedievalBaseFenceWoodSmall
   id: MedievalFenceWoodSmallTJunction
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: tjunction_small
   - type: Icon
     sprite: Structures/Walls/wooden_fence.rsi
     state: tjunction_small
@@ -339,6 +366,9 @@
   name: деревянные ворота для забора
   description: Глядя на эти ворота, в голове всплывает знакомый образ. Где мой поросенок?
   components:
+  - type: Construction
+    graph: MedievalFenceWood
+    node: gate_small
   - type: Sprite
     layers:
     - state: end_small

@@ -235,8 +235,8 @@
   id: FoodMedievalFlax
   description: Стебель льна, из которого можно сделать нить.
   components:
-  - type: StaticPrice
-    price: 2
+  - type: Stack
+    stackType: MedievalRawCloth
   - type: FlavorProfile
     flavors:
       - cotton
@@ -258,6 +258,7 @@
   - type: Tag
     tags:
     - MedievalFlax
+    - MedievalLoomMaterialStorage
   - type: Destructible
     thresholds:
     - trigger:
@@ -271,6 +272,17 @@
           MedievalFlaxSeeds:
             min: 1
             max: 2
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalRawCloth: 100
+
+- type: entity
+  id: FoodMedievalFlax5
+  suffix: Средневековье, 5
+  parent: FoodMedievalFlax
+  components:
+  - type: Stack
+    count: 5
 
 - type: entity
   suffix: Средневековье

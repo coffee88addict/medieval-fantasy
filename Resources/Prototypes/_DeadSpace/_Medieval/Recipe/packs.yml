@@ -57,3 +57,10 @@
   - MedievalConstructionToolsRecipe
   - MedievalBunchRecipe
   - MedievalKeyDuplicatorRecipe
+
+- type: latheRecipePack
+  id: MedievalLoom
+  recipes:
+  - MedievalClothRecipe
+  - MedievalProcessedPeltRecipe
+

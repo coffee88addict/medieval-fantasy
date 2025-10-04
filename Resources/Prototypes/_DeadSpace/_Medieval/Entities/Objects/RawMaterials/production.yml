@@ -325,3 +325,30 @@
   components:
   - type: Stack
     count: 1
+
+- type: entity
+  name: шкура
+  description: Необработанная звериная шкура. Может служить материалом для выделки кожи или простым укрытием от холода.
+  id: MedievalPelt
+  categories: [ HideSpawnMenu ]
+  parent: MedievalRawMaterialBase
+  components:
+  - type: Stack
+    stackType: MedievalPelt
+  - type: Sprite
+    layers:
+    - state: pelt1
+      map: ["base"]
+  # - type: Tag
+  #   tags:
+  #   - MedievalSawmillMaterialStorage
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalRawPelt: 100
+
+- type: entity
+  parent: MedievalPelt
+  id: MedievalPelt1
+  components:
+  - type: Stack
+    count: 1

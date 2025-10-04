@@ -7,6 +7,9 @@ stack-medieval-processed-gold = обработанное золото
 stack-medieval-processed-mithril = обработанный мифрил
 stack-medieval-processed-adamantine = обработанный адамантит
 stack-medieval-processed-stone = обработанный камень
+stack-medieval-processed-cloth = ткань
+stack-medieval-processed-pelt = дублёная кожа
+stack-medieval-tool-ammo = стройматериалы
 
 stack-medieval-raw-wood = древесина
 stack-medieval-raw-stone = камень
@@ -16,6 +19,8 @@ stack-medieval-raw-silver = серебро
 stack-medieval-raw-gold = золото
 stack-medieval-raw-mithril = мифрил
 stack-medieval-raw-adamantine = адамантин
+stack-medieval-raw-pelt = шкура
+stack-medieval-raw-cloth = ткань
 
 stack-medieval-nail = гвоздь
 

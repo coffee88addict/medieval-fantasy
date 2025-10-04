@@ -1,24 +1,4 @@
 - type: entity
-  name: стройматериалы
-  parent: BaseItem
-  suffix: Средневековье
-  id: MedievaConstructionToolsAmmo
-  description: Материалы для строительства сооружений.
-  components:
-  - type: RCDAmmo
-  - type: Sprite
-    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
-    state: ammo
-  - type: Item
-    sprite: _DeadSpace/_Medieval/Objects/Items/Tools/hammer.rsi
-    heldPrefix: ammo
-  - type: PhysicalComposition
-    materialComposition:
-      MedievalProcessedWood: 100
-      MedievalProcessedStone: 200
-      MedievalProcessedIron: 100
-
-- type: entity
   id: MedievalConstructionTools
   parent: BaseItem
   name: строительные инструменты

@@ -15,6 +15,14 @@
     craft: 1
 
 - type: skill
+  id: MedievalTailor
+  name: портное дело
+  description: Ремесло
+  pointsNeeded: 100
+  addLimit:
+    craft: 1
+
+- type: skill
   id: MedievalAlchem
   name: алхимия
   description: Ремесло

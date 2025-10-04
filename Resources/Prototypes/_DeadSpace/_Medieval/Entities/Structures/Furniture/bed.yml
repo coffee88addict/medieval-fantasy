@@ -1,5 +1,5 @@
 - type: entity
-  name: компортная кровать
+  name: комфортная кровать
   id: MedievalBaseBed
   parent: BaseStructure
   suffix: Средневековье
@@ -55,11 +55,16 @@
   name: удобная кровать
   description: Крепкая кровать, мягкая и с подушкой. Такая встречается только в покоях знати.
   components:
-  - type: PhysicalComposition # нужно rcd 10
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 33
-      MedievalProcessedStone: 66
-      MedievalProcessedIron: 33
+      MedievalProcessedPelt: 100
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
+      MedievalCloth: 200
+  - type: Construction
+    graph: MedievalBed
+    node: сomfortableBed
 
 - type: entity
   id: MedievalBed
@@ -74,11 +79,15 @@
       types:
         Poison: -0.5
         Blunt: -0.5
-  - type: PhysicalComposition # нужно rcd 5
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 15
-      MedievalProcessedStone: 30
-      MedievalProcessedIron: 15
+      MedievalProcessedWood: 203
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
+      MedievalCloth: 200
+  - type: Construction
+    graph: MedievalBed
+    node: bed
 
 - type: entity
   id: MedievalClothHeyBed
@@ -93,11 +102,15 @@
       types:
         Poison: -0.25
         Blunt: -0.25
-  - type: PhysicalComposition # нужно rcd 3
+  - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 9
-      MedievalProcessedStone: 18
-      MedievalProcessedIron: 9
+      MedievalProcessedWood: 3
+      MedievalProcessedStone: 6
+      MedievalProcessedIron: 3
+      MedievalCloth: 200
+  - type: Construction
+    graph: MedievalBed
+    node: сlothHeyBed
 
 - type: entity
   id: MedievalHeyBed
@@ -117,3 +130,7 @@
       MedievalProcessedWood: 3
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
+      MedievalCloth: 100
+  - type: Construction
+    graph: MedievalBed
+    node: heyBed

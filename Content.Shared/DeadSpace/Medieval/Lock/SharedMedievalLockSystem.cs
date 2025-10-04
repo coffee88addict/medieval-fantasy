@@ -41,7 +41,7 @@ public abstract partial class SharedMedievalLockSystem : EntitySystem
         if (lockEnt != null && TryComp<MedievalLockComponent>(lockEnt, out lockComp))
             return !lockComp.Locked;
 
-        return false;
+        return true;
     }
 
     public bool IsLocked(EntityUid uid, MedievalLockComponent? component = null)

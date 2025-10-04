@@ -74,3 +74,36 @@
   - type: PhysicalComposition
     materialComposition:
       MedievalProcessedIron: 500
+
+- type: entity
+  id: MedievalTanneryDetail
+  parent: MedievalBaseMachineDetail
+  name: деталь дубильни
+  components:
+  - type: MachineBoard
+    prototype: MedievalTannery
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 100
+
+- type: entity
+  id: MedievalLoomDetail
+  parent: MedievalBaseMachineDetail
+  name: деталь ткацкого станка
+  components:
+  - type: MachineBoard
+    prototype: MedievalLoom
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedWood: 100
+
+- type: entity
+  id: MedievalSewingDetail
+  parent: MedievalBaseMachineDetail
+  name: деталь швейной машины
+  components:
+  - type: MachineBoard
+    prototype: MedievalSewing
+  - type: PhysicalComposition
+    materialComposition:
+      MedievalProcessedIron: 100

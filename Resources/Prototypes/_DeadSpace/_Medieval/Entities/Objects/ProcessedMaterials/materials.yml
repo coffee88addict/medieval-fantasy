@@ -68,3 +68,20 @@
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/stone.rsi, state: stone }
   color: "#808080"   # серый, камень
   price: 0.88
+
+- type: material
+  id: MedievalCloth
+  stackEntity: MedievalCloth
+  name: medieval-processed-materials-cloth
+  color: "#949494"
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth4 }
+  price: 2
+
+- type: material
+  id: MedievalProcessedPelt
+  stackEntity: MedievalProcessedPelt1
+  name: medieval-processed-materials-pelt
+  unit: materials-unit-chunk
+  icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: procPelt3 }
+  color: "#643932"
+  price: 10
