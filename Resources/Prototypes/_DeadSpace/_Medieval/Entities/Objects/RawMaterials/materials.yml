@@ -89,7 +89,7 @@
 
 - type: material
   id: MedievalRawCloth
-  stackEntity: FoodMedievalFlax
+  stackEntity: FoodMedievalFlax1
   name: medieval-raw-materials-cloth
   unit: materials-unit-chunk
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth1 }

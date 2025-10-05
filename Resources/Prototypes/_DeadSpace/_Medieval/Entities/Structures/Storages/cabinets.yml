@@ -64,7 +64,7 @@
       map: ["openLayer"]
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
   - type: Construction
@@ -83,7 +83,7 @@
       map: ["openLayer"]
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
   - type: Construction
@@ -106,7 +106,7 @@
       map: ["openLayer"]
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
   - type: Construction
@@ -129,7 +129,7 @@
       map: ["openLayer"]
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
   - type: Construction

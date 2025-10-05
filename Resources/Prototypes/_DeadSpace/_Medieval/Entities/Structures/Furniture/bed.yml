@@ -58,7 +58,7 @@
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
       MedievalProcessedPelt: 100
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
       MedievalCloth: 200
@@ -81,7 +81,7 @@
         Blunt: -0.5
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
       MedievalCloth: 200

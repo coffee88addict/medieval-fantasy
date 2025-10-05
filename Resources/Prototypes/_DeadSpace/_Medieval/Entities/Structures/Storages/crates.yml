@@ -110,7 +110,7 @@
     sprite: _DeadSpace/_Medieval/Structures/Storages/Crates/crate1.rsi
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
 
@@ -140,9 +140,9 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
-      MedievalProcessedIron: 103
+      MedievalProcessedIron: 100
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -170,7 +170,7 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
       MedievalProcessedGold: 100
@@ -201,9 +201,9 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
-      MedievalProcessedIron: 103
+      MedievalProcessedIron: 100
       MedievalProcessedGold: 100
 
 - type: entity
@@ -232,7 +232,7 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
 
@@ -265,9 +265,9 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
-      MedievalProcessedIron: 203
+      MedievalProcessedIron: 200
 
 - type: entity
   parent: MedievalBaseLockableCrate
@@ -295,7 +295,7 @@
           collection: MetalBreak
   - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 403
+      MedievalProcessedWood: 400
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
 

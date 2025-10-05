@@ -86,7 +86,7 @@
   - type: Sprite
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
       MedievalCloth: 100
@@ -101,7 +101,7 @@
     state: chair2
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
       MedievalCloth: 200
@@ -116,7 +116,7 @@
     state: chair3
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
       MedievalCloth: 200
@@ -134,7 +134,7 @@
     state: chair4
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
       MedievalCloth: 100
@@ -152,7 +152,7 @@
     state: chair5
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 203
+      MedievalProcessedWood: 200
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
   - type: Construction
@@ -169,7 +169,7 @@
     state: chair6
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 103
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 7
       MedievalProcessedIron: 3
   - type: Construction

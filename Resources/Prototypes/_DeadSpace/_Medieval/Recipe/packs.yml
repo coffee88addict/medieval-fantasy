@@ -62,7 +62,6 @@
   id: MedievalLoom
   recipes:
   - MedievalClothRecipe
-  - MedievalProcessedPeltRecipe
 
 - type: latheRecipePack
   id: MedievalSewing
