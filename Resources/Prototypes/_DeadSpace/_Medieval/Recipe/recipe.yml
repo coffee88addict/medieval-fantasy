@@ -333,3 +333,24 @@
     MedievalRawPelt: 100
 
 # Швейный станок
+
+- type: latheRecipe
+  parent: MedievalMaterialProcessingRecipe
+  id: MedievalComfortableBedsheetRecipe
+  result: MedievalComfortableBedsheet
+  materials:
+    MedievalCloth: 100
+
+- type: latheRecipe
+  parent: MedievalMaterialProcessingRecipe
+  id: MedievalLeatherBedsheetRecipe
+  result: MedievalLeatherBedsheet
+  materials:
+    MedievalProcessedPelt: 100
+
+- type: latheRecipe
+  parent: MedievalMaterialProcessingRecipe
+  id: MedievalSimpleBedsheetRecipe
+  result: MedievalSimpleBedsheet
+  materials:
+    MedievalCloth: 50

@@ -242,7 +242,7 @@
     runningState: building
     defaultProductionAmount: 1
     staticPacks:
-    - MedievalSmelter
+    - MedievalSewing
   - type: NeededSkillForInteract
     neededSkills:
     - MedievalTailor

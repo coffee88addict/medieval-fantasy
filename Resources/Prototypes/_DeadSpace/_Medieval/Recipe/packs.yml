@@ -64,3 +64,9 @@
   - MedievalClothRecipe
   - MedievalProcessedPeltRecipe
 
+- type: latheRecipePack
+  id: MedievalSewing
+  recipes:
+  - MedievalComfortableBedsheetRecipe
+  - MedievalLeatherBedsheetRecipe
+  - MedievalSimpleBedsheetRecipe

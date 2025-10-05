@@ -27,12 +27,9 @@
   name: комфортное одеяло
   description: Мягкое и тёплое одеяло из льняной ткани. Такое обычно можно встретить в спальнях знати.
   components:
-  - type: PhysicalComposition # нужно добавить льняную ткань
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 33
-      MedievalProcessedStone: 66
-      MedievalProcessedIron: 33
-      MedievalLinenCloth: 20
+      MedievalCloth: 100
 
 - type: entity
   id: MedievalLeatherBedsheet
@@ -42,12 +39,9 @@
   components:
   - type: Sprite
     state: blanket2
-  - type: PhysicalComposition # нужно добавить кожу
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 33
-      MedievalProcessedStone: 66
-      MedievalProcessedIron: 33
-      MedievalLeather: 15
+      MedievalProcessedPelt: 100
 
 - type: entity
   id: MedievalSimpleBedsheet
@@ -57,9 +51,6 @@
   components:
   - type: Sprite
     state: blanket3
-  - type: PhysicalComposition # нужно добавить льняную ткань
+  - type: PhysicalComposition
     materialComposition:
-      MedievalProcessedWood: 33
-      MedievalProcessedStone: 66
-      MedievalProcessedIron: 33
-      MedievalLinenCloth: 10
+      MedievalLinenCloth: 50
