@@ -86,7 +86,7 @@
   - node: girder3
     entity: MedievalDoorGirder
     edges:
-    - to: girde2
+    - to: girder2
       conditions:
         - !type:EntityAnchored
           anchored: true
@@ -117,7 +117,7 @@
   - node: girder4
     entity: MedievalDoorGirder
     edges:
-    - to: girde3
+    - to: girder3
       conditions:
         - !type:EntityAnchored
           anchored: true
@@ -145,7 +145,7 @@
   - node: girder5
     entity: MedievalDoorGirder
     edges:
-    - to: girde4
+    - to: girder4
       conditions:
         - !type:EntityAnchored
           anchored: true

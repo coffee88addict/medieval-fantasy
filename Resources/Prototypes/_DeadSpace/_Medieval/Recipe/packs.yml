@@ -70,3 +70,8 @@
   - MedievalComfortableBedsheetRecipe
   - MedievalLeatherBedsheetRecipe
   - MedievalSimpleBedsheetRecipe
+
+- type: latheRecipePack
+  id: MedievalTannery
+  recipes:
+  - MedievalProcessedPeltRecipe

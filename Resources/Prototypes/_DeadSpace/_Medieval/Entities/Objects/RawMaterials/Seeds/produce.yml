@@ -233,6 +233,7 @@
   name: лён
   parent: FoodProduceBase
   id: FoodMedievalFlax
+  categories: [ HideSpawnMenu ]
   description: Стебель льна, из которого можно сделать нить.
   components:
   - type: Stack
@@ -272,9 +273,18 @@
           MedievalFlaxSeeds:
             min: 1
             max: 2
+  - type: Material
   - type: PhysicalComposition
     materialComposition:
       MedievalRawCloth: 100
+
+- type: entity
+  id: FoodMedievalFlax1
+  suffix: Средневековье, 1
+  parent: FoodMedievalFlax
+  components:
+  - type: Stack
+    count: 1
 
 - type: entity
   id: FoodMedievalFlax5

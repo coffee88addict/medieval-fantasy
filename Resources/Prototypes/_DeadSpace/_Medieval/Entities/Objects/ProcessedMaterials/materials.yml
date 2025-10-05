@@ -71,7 +71,7 @@
 
 - type: material
   id: MedievalCloth
-  stackEntity: MedievalCloth
+  stackEntity: MedievalCloth1
   name: medieval-processed-materials-cloth
   color: "#949494"
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth4 }

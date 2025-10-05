@@ -325,6 +325,8 @@
   materials:
     MedievalRawCloth: 100
 
+# Дубильня
+
 - type: latheRecipe
   parent: MedievalRawProcessingRecipe
   id: MedievalProcessedPeltRecipe

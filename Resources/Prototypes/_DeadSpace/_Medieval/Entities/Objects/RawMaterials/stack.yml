@@ -72,5 +72,5 @@
   id: MedievalRawCloth
   name: stack-medieval-raw-cloth
   icon: { sprite: /Textures/_DeadSpace/_Medieval/Objects/Materials/misk.rsi, state: cloth1 }
-  spawn: FoodMedievalFlax
+  spawn: FoodMedievalFlax1
   maxCount: 5

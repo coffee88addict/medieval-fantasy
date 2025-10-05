@@ -122,7 +122,7 @@
       MedievalCloth: 200
   - type: Construction
     graph: MedievalChair
-    node: сomfortableBed
+    node: chairEmeraldLuxury
 
 - type: entity
   parent: MedievalBaseChair

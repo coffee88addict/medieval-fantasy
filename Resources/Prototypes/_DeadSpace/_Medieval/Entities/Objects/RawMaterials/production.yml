@@ -339,9 +339,9 @@
     layers:
     - state: pelt1
       map: ["base"]
-  # - type: Tag
-  #   tags:
-  #   - MedievalSawmillMaterialStorage
+  - type: Tag
+    tags:
+    - MedievalTanneryMaterialStorage
   - type: PhysicalComposition
     materialComposition:
       MedievalRawPelt: 100

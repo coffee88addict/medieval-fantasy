@@ -132,7 +132,7 @@
   plantRsi: _DeadSpace/_Medieval/Objects/Materials/Seeds/flax.rsi
   packetPrototype: MedievalFlaxSeeds
   productPrototypes:
-    - FoodMedievalFlax
+    - FoodMedievalFlax1
   lifespan: 45
   maturation: 12
   production: 3
