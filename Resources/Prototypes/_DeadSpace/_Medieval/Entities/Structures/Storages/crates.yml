@@ -7,6 +7,9 @@
   description: Большой контейнер.
   components:
   - type: Animateable
+  - type: Construction
+    containers:
+      - entity_storage
   - type: Transform
     noRot: true
   - type: Icon

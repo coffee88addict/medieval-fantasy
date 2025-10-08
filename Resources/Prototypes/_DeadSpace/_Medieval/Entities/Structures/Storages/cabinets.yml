@@ -129,7 +129,7 @@
       map: ["openLayer"]
   - type: PhysicalComposition # нужно rcd 1
     materialComposition:
-      MedievalProcessedWood: 200
+      MedievalProcessedWood: 100
       MedievalProcessedStone: 6
       MedievalProcessedIron: 3
   - type: Construction
