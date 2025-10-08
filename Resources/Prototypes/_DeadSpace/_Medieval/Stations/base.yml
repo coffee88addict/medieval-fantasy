@@ -5,7 +5,7 @@
     - BaseStationCargo
     - BaseStationJobsSpawning
     - BaseStationCentcomm
-    - BaseStationEvacuation
+    # - BaseStationEvacuation
     - BaseStationAlertLevels
     - BaseStationExpeditions
     # - BaseStationSalvageJobs
